@@ -1,271 +1,403 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Discografia Gustavo Cerati</title>
+        <title>Gustavo Adrián Cerati</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
-        <script type="text/javascript" src="funciones.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="gustavo,adrian,cerati,amor amarillo,bocanada,siempre es hoy,ahi vamos,fuerza natural">
+        <meta name="description" content="Descripción de los cinco discos que realizo Gustavo Adrian Cerati en su etapa como solista. Agregando tambien algunas curiosidades.">
+        <meta name="author" content="Luis Gabriel ALeman">
+        <meta name="robots" content="index">
+        <meta rel="canonical" content="http://www.cerati.com">
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
-    <body id="CUERPO">
-        <section id="CLAROSCURO">
-            <div id="MODO">
+    <body class="precarga">
+        <div id="cargando_pagina">
+            <!-- ID Particles.js -->
+            <div id="particles-js"></div>
+            <div id="contenedor_precarga">
+                <img src="images/zprecarga.png" class="satelite_cerati" alt="imagen de un microfono con forma de satelite e inscripto al costado satelite cerati">
+                <h1>
+                    <span class="let1">c</span>  
+                    <span class="let2">a</span>  
+                    <span class="let3">r</span>  
+                    <span class="let4">g</span>  
+                    <span class="let5">a</span>  
+                    <span class="let6">n</span>  
+                    <span class="let7">d</span>
+                    <span class="let8">o</span>   
+                </h1>
+            </div>
+        </div>
+        <header id="encabezado" class="opacidad visible display_ninguno">
+            <img class="logo-cerati" src="images/SVG/logo.svg" alt="logo de Gustavo Cerati del disco Ahi Vamos">
+            <div class="contenedor1 ">
+                <div class="contenedor2 ">
+                    <h1>Gustavo Adrián Cerati</h1>
+                    <p>Un recorrido de su discografia solista.</p>
+                </div>
+            </div>
+            <nav class="vinculos">
                 <ul>
-                    <li><a href="#CLAROSCURO" onclick="claro()"><img id="sol" src="img/SVG/sun1.svg"></a></li>
-                    <li><a href="#CLAROSCURO" onclick="oscuro()"><img id="luna" src="img/SVG/moon1.svg"></a></li>
+                    <li><a href="#AMOR_AMARILLO" onclick="mostrar('AMOR_AMARILLO'), ocultar('BOCANADA'), ocultar('SIEMPRE_ES_HOY'), ocultar('AHI_VAMOS'), ocultar('FUERZA_NATURAL')">Amor amarillo</a></li>
+                    <li><a href="#BOCANADA" onclick="ocultar('AMOR_AMARILLO'), mostrar('BOCANADA'), ocultar('SIEMPRE_ES_HOY'), ocultar('AHI_VAMOS'), ocultar('FUERZA_NATURAL')">Bocanada</a></li>
+                    <li><a href="#SIEMPRE_ES_HOY" onclick="ocultar('AMOR_AMARILLO'), ocultar('BOCANADA'), mostrar('SIEMPRE_ES_HOY'), ocultar('AHI_VAMOS'), ocultar('FUERZA_NATURAL')">Siempre es hoy</a></li>
+                    <li><a href="#AHI_VAMOS" onclick="ocultar('AMOR_AMARILLO'), ocultar('BOCANADA'), ocultar('SIEMPRE_ES_HOY'), mostrar('AHI_VAMOS'), ocultar('FUERZA_NATURAL')">Ahi vamos</a></li>
+                    <li><a href="#FUERZA_NATURAL" onclick="ocultar('AMOR_AMARILLO'), ocultar('BOCANADA'), ocultar('SIEMPRE_ES_HOY'), ocultar('AHI_VAMOS'), mostrar('FUERZA_NATURAL')">Fuerza natural</a></li>
                 </ul>
-            </div>
-        </section>
-        <header id="CABECERA">
-            <div id="DISCOGRAFIA">
-                <h1>DISCOGRAFIA</h1>
-            </div>
-            <nav id="BTN_PRINCIPAL">
-                <ul>
-                    <li><a href="#AMOR_AMARILLO">AMOR AMARILLO</a></li>
-                    <li><a href="#BOCANADA">BOCANADA</a></li>
-                    <li><a href="#SIEMPRE_ES_HOY">SIEMPRE ES HOY</a></li>
-                    <li><a href="#AHI_VAMOS">AHI VAMOS</a></li>
-                    <li><a href="#FUERZA_NATURAL">FUERZA NATURAL</a></li>
-                </ul>  
             </nav>
         </header>
-        <section id="GUSTAVO_CERATI">
-            <div id="FRASE">
-                <p>"El arte te da la posibilidad de mentir, de imaginar, de cambiar los esquemas. Ojalá me animara a mucho más de lo que me animo. De eso se trata ser artista: de animarse, de ser cara rota, pero con talento."</p>
-                <p>GUSTAVO ADRIÁN CERATI</p>
-                <P>1959-2014</p>
-                <nav id="BOOTSTRAP">
-                    <ul>
-                        <li><a href="index_bs.html" target="new" id="IR-BOOTSTRAP">MÁS FRASES</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-        <section id="AMOR_AMARILLO">
-            <div id="AMOR_AMARILLO_IMAGEN">
-                <img src="img/amor1.jpg" alt="amor amarillo" class="img_alto">
-            </div>
-            <div id="AMOR_AMARILLO_TEMAS">
-                <h2>TEMAS</h2>
-                <ol>
-                    <li>Amor amarillo</li>
-                    <li>Lisa</li>
-                    <li>Te llevo para que me lleves</li>
-                    <li>Pulsar</li>
-                    <li>Cabeza de medusa</li>
-                    <li>Av. Alcorta</li>
-                    <li>Bajan</li>
-                    <li>Rombos</li>
-                    <li>Ahora es nunca</li>
-                    <li>A merced</li>
-                    <li>Torteval (sólo en la primera edición argentina)</li>
-                </ol>
-            </div>
-            <div id="AMOR_AMARILLO_TEXTO">
-                <h3>FECHA DE LANZAMIENTO: 01/11/1993</h3>
-                <h4>AMOR AMARILLO</h4>
-                <p>Un año después del innovador y sorprendente Colores Santos, y a menos de un lustro de otros proyectos paralelos a Soda Stereo, como Plan V y Ocio, Gustavo Cerati dio forma a un álbum a solas que no estaba en sus planes. No se trataba del puntapié de una carrera solista, sino el resultado de un impulso creativo incontenible, mientras se encontraba en la dulce espera, viviendo en Santiago de Chile con mucho tiempo libre, sin el vértigo constante de su agenda con Soda. Son canciones acústicas y electrónicas a la vez, una colección adorable y amorosa, cautivante, encantadora y tierna, con toda la intimidad y sensualidad narcótica de discos de cabecera suyos como Artaud (Pescado Rabioso) o Joy (Ultra Vivid Scene). Luminoso y colorido, de punta a punta.</p>
-                <p>Nació casi por casualidad, en el exilio del líder de Soda y mientras esperaba su primer hijo; se convirtió en un disco clave en su carrera. Cecilia Amenábar, Tweety González, Zeta Bosio y Alejandro Ros reconstruyen la historia de canciones modernas aún hoy.</p>
-                <p>CERATI: "Amarillo es el color que yo le veo al amor. También lo asocio con toda la historia de generar vida en el útero de mi mujer... Además, el sol es amarillo, y creo que no hay nada que lo pueda superar en vitalidad. Silencio visual, con esa frase se resume la imagen del álbum. Llegar a lo despojado pero como producto de una gran complejidad. Se parece a esos discos que contienen todo el espectro de colores y que, al girarlos a mucha velocidad, se tornan blancos. En este caso, amarillo."</p>
-            </div>
-        </section>
-        <section id="BOCANADA">
-            <div id="BOCANADA_IMAGEN">
-                <img src="img/bocanada1.jpg" class="img_alto">
-            </div>
-            <div id="BOCANADA_TEMAS">
-                <h2>TEMAS</h2>
-                <ol>
-                    <li>Tabú</li>
-                    <li>Engaña</li>
-                    <li>Bocanada</li>
-                    <li>Puente</li>
-                    <li>Rio Bable</li>
-                    <li>Beautiful</li>
-                    <li>Perdonar es divino</li>
-                    <li>Verbo carne</li>
-                    <li>Raíz</li>
-                    <li>Y si el humo está en foco...</li>
-                    <li>Paseo inmoral</li>
-                    <li>Aquí y ahora (los primeros tres minutos)</li>
-                    <li>Aquí y ahora (y después)</li>
-                    <li>Alma</li>
-                    <li>Balsa</li>
-                </ol>
-            </div>
-            <div id="BOCANADA_TEXTO">
-                <h3>FECHA DE LANZAMIENTO: 28/06/1999</h3>
-                <h4>BOCANADA</h4>
-                <p>Ahora sí, tras la despedida multitudinaria y de proporciones olímpicas de El Último Concierto de Soda Stereo, llegó la hora de dar el primer paso en el inicio de una carrera solista. A los 39 años, Gustavo Cerati encara el verdadero salto a la ruta solista sin pasaje de vuelta hacia el trío -como sí había ocurrido después de editar Amor amarillo en 1993-. Pero no hubo apuro, presiones ni procesos tortuosos, y cada paso en el camino de Bocanada fue meditado con tiempo. El material fue surgiendo naturalmente, capitalizando la experiencia y el oficio, pero también jugando en forma lúdica, hasta desembocar en un álbum impactante, ambicioso, romántico y sofisticado, al punto de usar tecnología de punta y grabar con una orquesta sinfónica en Abbey Road. Hay colaboraciones claves de letristas e instrumentistas, y el babel de idiomas musicales de la cabeza de Gustavo confluye en una belleza única, digital y barroca.</p>
-                <p>CERATI: "Veo a Bocanada como una especie de almohadón en el que uno puede recostarse. Para mí empieza una era muy importante en mi vida, digamos, este disco es la primera cosa que hago con una sensación más de futuro. Empiezo como solista."</p>
-            </div>
-        </section>
-        <section id="SIEMPRE_ES_HOY">
-            <div id="SIEMPRE_ES_HOY_IMAGEN">
-                <img src="img/siempre1.jpg" class="img_alto">
-            </div>
-            <div id="SIEMPRE_ES_HOY_TEMAS">
-                
-                <h2>TEMAS</h2>
-                <ol>
-                    <li>Cosas imposibles</li>
-                    <li>No te creo</li>
-                    <li>Artefacto</li>
-                    <li>Nací para esto</li>
-                    <li>Amo dejarte así</li>
-                    <li>Tu cicatriz en mí</li>
-                    <li>Señales luminosas</li>
-                    <li>Karaoke</li>
-                    <li>Sulky</li>
-                    <li>Casa</li>
-                    <li>Camuflaje</li>
-                    <li>Altar</li>
-                    <li>Torre de marfil</li>
-                    <li>Fantasma</li>
-                    <li>Vivo</li>
-                    <li>Sudestada</li>
-                    <li>Especie</li>
-                </ol>
-            </div>
-            <div id="SIEMPRE_ES_HOY_TEXTO">
-                <h3>FECHA DE LANZAMIENTO: 26/11/2002</h3>
-                <h4>SIEMPRE ES HOY</h4>
-                <p>Siempre es hoy fue, a la distancia, tal vez el disco más arriesgado en la carrera de Gustavo Cerati. En el punto máximo de su alejamiento de Soda Stereo, este disco fue editado el 26 de noviembre de 2002 y cosechó críticas dispares. Desde Bocanada habían pasado ya 3 años y en el medio hubo 2 discos (+ Bien y 11 Episodios sinfónicos) que mitigaban la espera de la salida del primer disco de canciones nuevas de Cerati del nuevo milenio. Producido por 2 músicos de la banda mexicana Control Machete, quizás ahí resida el germen del error que hizo de SEH un disco que no supo estar a la altura de sus compañeros de escudería. También atentaron contra el resultado artístico de la placa la extensión en el tiempo de las sesiones de grabación, iniciadas en 2001 y los parates que tuvo en el medio, sumado a la ruptura matrimonial con Cecilia Amenábar luego de develarse la relación que mantenía con Deborah De Corral (quien aparece en el disco y también parcialmente en la contratapa del mismo)</p>
-                <p>CERATI: "El presente continuo que estamos viviendo involucra el pasado. El hoy es la suma de todo eso: cuando uno expresa su amor y dice te quiero para siempre, ese siempre, es hoy, aunque parezca ser infinito. Con esa idea le puse ese nombre"</p>
-            </div>
-        </section>
-        <section id="AHI_VAMOS">
-            <div id="AHI_VAMOS_IMAGEN">
-                <img src="img/ahi2.jpg" class="img_alto">
-            </div>
-            <div id="AHI_VAMOS_TEMAS">
-                <h2>TEMAS</h2>
-                <ol>
-                    <li>Al fin sucede</li>
-                    <li>La excepción</li>
-                    <li>Uno entre 1000</li>
-                    <li>Caravana</li>
-                    <li>Adiós</li>
-                    <li>Me quedo Aquí</li>
-                    <li>Lago en el cielo</li>
-                    <li>Dios nos libre</li>
-                    <li>Otra piel</li>
-                    <li>Medium</li>
-                    <li>Bomba de tiempo</li>
-                    <li>Crimen</li>
-                    <li>Jugo de luna</li>
-                </ol>
-            </div>
-            <div id="AHI_VAMOS_TEXTO">
-                <h3>FECHA DE LANZAMIENTO: 04/04/2006</h3>
-                <h4>AHI VAMOS</h4>
-                <p>Todo comenzó a tomar forma en los primeros meses de 2005, cuando tuvo listo su estudio de grabación propio, que bautizó Unísono y que había montado en una vieja fábrica de zapatos que encontró Mirta Magallanes, la mujer de su fiel asistente de guitarras, Eduardo “Barakus” Iencenella, en el barrio de Florida.</p>
-                <p>También se había puesto en pareja con Deborah de Corral, tras un divorcio muy mediático de Cecilia Amenábar, con infidelidades cruzadas; ella, con Francisco Bochatón, el líder de Peligrosos Gorriones, que había hecho una letra junto a Cerati en Bocanada.</p>
-                <p>Pero después de unos dos años con Deborah, ella lo dejó por Ezequiel Araujo, el tecladista de El Otro Yo que había ingresado en el Universo Cerati como productor del disco que Leo García grabó en el debut del estudio Unísono. Tenia 45 años y por primera vez una mujer lo había dejado.</p>
-                <p>“Gustavo estaba acomodándose tras la separación de Deborah, Tweety había sufrido un ataque al corazón post-divorcio y Richard se había ido de su casa y dejado el alcohol. Era un grupo de amigos que atravesaba las turbulencias de los cuarenta y pico, una banda de corazones rotos encerrándose a tocar rock para sanar sus heridas”.</p>
-                <p>Asi comienza a nacer el disco como Explosivo, rockero o "guitarrero" a secas. A la hora de desmarcarse de algunas etiquetas que le endilgaron durante el primer lustro de la década del 2000, Cerati decidió sacudir todos los preconceptos con un trabajo poderoso, desbordante de energía y más que apto para aumentar la fuerza de los conciertos de sus giras. Y si bien el primer corte fue una audaz apuesta por una inesperada balada rockera clásica, el álbum es un despliegue constante de poderío valvular, riffs de antología y solos magistrales. Inspirado y eléctrico, es realmente memorable y su proximidad en la línea del tiempo no debe conspirar en poder catalogarlo como un verdadero clásico del rock argentino.</p>
-                <p>CERATI: "El álbum está muy enfocado hacia la guitarra, la voz y la forma clásica de la canción: estrofa, estribillo, puente. Lo hice porque quería que el disco tuviera una dirección y no fuera heterogéneo como otros. Es un disco de rock, con energía de rock. Sería como una especie de manual del Cerati ilustrado que tiene puntos de contacto con muchas cosas. La gente va a encontrar familiaridad con cosas que hice con Soda Stereo, pero también con discos solistas míos. Nada se pierde."</p>
-            </div>
-        </section>
-        <section id="FUERZA_NATURAL">
-            <div id="FUERZA_NATURAL_IMAGEN">
-                <img src="img/fuerza1.jpg" class="img_alto">
-            </div>
-            <div id="FUERZA_NATURAL_TEMAS">
-                <h2>TEMAS</h2>
-                <ol>
-                    <li>Fuerza natural</li>
-                    <li>Déjà vu</li>
-                    <li>Magia</li>
-                    <li>Amor sin rodeos</li>
-                    <li>Tracción a sangre</li>
-                    <li>Desastre</li>
-                    <li>Rapto</li>
-                    <li>Cactus</li>
-                    <li>Naturaleza muerta</li>
-                    <li>Dominó</li>
-                    <li>Sal</li>
-                    <li>Convoy</li>
-                    <li>He visto a Lucy</li>
-                    <p><class="numeral">#</class></p>
-                </ol>
-                
-            </div>
-            <div id="FUERZA_NATURAL_TEXTO">
-                <h3>FECHA DE LANZAMIENTO:  01/09/2009</h3>
-                <h4>FUERZA NATURAL</h4>
-                <p>Uno de los discos más esperados de Cerati y acaso uno de los más esperados dentro de esta curiosa entelequia llamada “Rock Nacional”. Editado en Septiembre de 2009 y tras el impactante regreso de Soda Stereo batiendo (cuándo no) records en toda Latinoamérica, Fuerza natural es el último disco de Gustavo Cerati.</p> 
-                <p>Era el regreso a su faceta solista, dos años después de la gira de reunión de Soda Stereo, y es un viaje sonoro… debo decirlo: al principio no lo entendí ¿Esto después del vértigo “Ahí vamos / Me verás volver“? Y sí… luego de un año con un Cerati repartido entre Italia y Uruguay tenía que salir algo medio Traveller (de viajero, sí. Y de Wilbury también).</p>
-                <p>El álbum, que inició con ventas superiores a las 20 mil unidades en su primera semana, lo que le valió a Cerati “certificado de oro”, fue un interesante trabajo en el que colaboraron su hijo Benito, Richard Coleman, Adrián Paoletti y Anita Álvarez de Toledo en los coros.</p>
-                <p>En casi una hora de música Cerati nos embarcaba en un viaje de tonalidades folk/rock junto a la guitarra de Gonzalo Córdoba, el piano de Leandro Fresco, el bajo de Fernando Nalé y Fernando Samalea en la batería.</p>
-                <p>El álbum, editado en los formatos de CD, vinilo y él para entonces nuevo formato de alta calidad digital conocido como MusicPass, se convirtió en el de mayor ventas en la tienda iTunes latina.</p>
-                <p>CERATI: "Si yo me retirará ahora, en este momento... no creo que sea muy factible pero supongamos que sí, me iría contento. Por Fuerza Natural"</p>
-            </div>
-        </section>
-        <footer id='PIE_PAGINA'>
-            <div id="CUESTIONARIO">
-                <h3>CURIOSIDADES</h3>
-                <script type="text/javascript">
-                    if (nacimiento != 1959) {
-                        document.write('<h5>¿En que año nacio Gustavo Adrián Cerati?: '+nacimiento+'<span class="mal"> RESPUESTA EQUIVOCADA </span> </h5>')
-                    } else {
-                        document.write('<h5>¿En que año nacio Gustavo Adrián Cerati?: '+nacimiento+'</h5>')
-                    }
-                    if (amor != 2) {
-                        document.write('<h5>¿Cuantas veces se casó Gustavo Adrián Cerati?: '+amor+'<span class="mal"> RESPUESTA EQUIVOCADA </span> </h5>')
-                    } else {
-                        document.write('<h5>¿Cuantas veces se casó Gustavo Adrián Cerati?: '+amor+'</h5>')
-                    }
-                    if (siempre != 'siempre es hoy') {
-                        document.write('<h5>"Te amo para siempre pero...": '+siempre+'<span class="mal"> RESPUESTA EQUIVOCADA </span> </h5>')
-                    } else {
-                        document.write('<h5>"Te amo para siempre pero...": '+siempre+'</h5>')
-                    }
-                    if (natural != 14) {
-                        document.write('<h5>¿Cuántos temas tiene el disco Fuerza Natural?: '+natural+'<span class="mal"> RESPUESTA EQUIVOCADA </span> </h5>')
-                    } else {
-                        document.write('<h5>¿Cuántos temas tiene el disco Fuerza Natural?: '+natural+'</h5>')
-                    }
-                    if (fallecimiento != 2014) {
-                        document.write('<h5>¿En que año murio Gustavo Cerati?: '+fallecimiento+'<span class="mal"> RESPUESTA EQUIVOCADA </span> </h5>')
-                    } else {
-                        document.write('<h5>¿En que año murio Gustavo Cerati?: '+fallecimiento+'</h5>')
-                    }
-                </script>
-            </div>
-            <nav id="BTN_SOLUCIONES">
-                <ul>
-                    <li><a href="#RESPUESTA1" onclick="mostrar('RESPUESTA1'), ocultar('RESPUESTA2'), ocultar('RESPUESTA3'), ocultar('RESPUESTA4'), ocultar('RESPUESTA5')">SOLUCION 1</a></li>
-                    <li><a href="#RESPUESTA2" onclick="mostrar('RESPUESTA2'), ocultar('RESPUESTA1'), ocultar('RESPUESTA3'), ocultar('RESPUESTA4'), ocultar('RESPUESTA5')">SOLUCION 2</a></li>
-                    <li><a href="#RESPUESTA3" onclick="mostrar('RESPUESTA3'), ocultar('RESPUESTA1'), ocultar('RESPUESTA2'), ocultar('RESPUESTA4'), ocultar('RESPUESTA5')">SOLUCION 3</a></li>
-                    <li><a href="#RESPUESTA4" onclick="mostrar('RESPUESTA4'), ocultar('RESPUESTA1'), ocultar('RESPUESTA2'), ocultar('RESPUESTA3'), ocultar('RESPUESTA5')">SOLUCION 4</a></li>
-                    <li><a href="#RESPUESTA5" onclick="mostrar('RESPUESTA5'), ocultar('RESPUESTA1'), ocultar('RESPUESTA2'), ocultar('RESPUESTA3'), ocultar('RESPUESTA4')">SOLUCION 5</a></li>
-                </ul>  
-            </nav>
-            <div id="RESPUESTA1" style="display: none;">
-                <p>Gustavo Adrián Cerati nació en el barrio Villa Ortúzar de la Ciudad de Buenos Aires el 11 de agosto de 1959.</p>
-            </div>
-            <div id="RESPUESTA2" style="display: none;">
-                <p>Gustavo Adrián Cerati se caso 2 veces: con Belén Edwards en abril de 1987 en Buenos Aires (duro solamente un año) y con María Cecilia Amenábar Granella en 1993 en la parroquia Sagrada Familia de Santiago de Chile (duro 9 años y se separaron en febrero de 2002).</p>
-            </div>
-            <div id="RESPUESTA3" style="display: none;">
-                <p>Gustavo Adrián Cerati: "Te amo para siempre pero lo que tenia que agregar es y siempre es hoy. Hoy es una ventana para siempre, pero hoy no es tampoco siempre, pero ¡Siempre es hoy!.</p>
-            </div>
-            <div id="RESPUESTA4" style="display: none;">
-                <p>Son en total 14 canciones. Se incluye en este conteo el tema conocido como "#"</p>
-                <p>Gustavo Adrián Cerati: "Al escribir la letra de este tema me basé en cierta psicodelia infantil, o en lo infantil que se transforma en psicodelia. En lo relacionado con la numerología, con los números mágicos, me puse a contar y sin haberlo imaginado antes, llego hasta el 13 y vuelvo a comenzar en 13. Es como una especie de maldición maya. Así que se puede ver como el fin del viaje que realizo en mi disco, pero la verdad no era mi intención. Esta canción es como un viaje astral. No se sabe si se está dormido o despierto; si es un segundo o 100 años, no hay tiempo ni espacio".</p>
-            </div>
-            <div id="RESPUESTA5" style="display: none;">
-                <p>El 15 de mayo de 2010 Cerati perdió la consciencia tras ofrecer un concierto en Caracas, Venezuela. Después de cuatro años en estado de coma por un accidente cerebrovascular, el 4 de septiembre del 2014 Cerati falleció en la Clínica de Rehabilitación Integral (ALCLA) en ciudad de Buenos Aires.</p>
-            </div>
-            <div id="CONTACTO">
-                <p>Mas sobre nosotros visita nuestro facebook:</p>
-                <ul>
-                    <li><a href="https://www.facebook.com/SobredosisCerati" target="new">
-                        <img src="img/SVG/facebook2.svg"></a> </li>
-                </ul>
-            </div>
-        </footer>
+        <div id="articulos" class="display_ninguno">
+            <article id="AMOR_AMARILLO" class="articulo_discos opacidad display_ninguno">
+                <div class="discografia">
+                    <div class="cerrar">
+                        <img class="logo-x" src="images/SVG/x-blanco.svg"  onclick="cerrar()">
+                    </div>
+                    <h3>AMOR AMARILLO</h3>
+                    <img src="images/amoramarillo1.jpg" class="presentacion" alt="Gustavo Cerati con Cecilia Amenábar y con un fondo con varias frases escrito te amo">
+                    <h4>FECHA DE LANZAMIENTO: 01/11/1993</h4>
+                    <img loading="lazy" src="images/amoramarillo2.jpg" class="img-izquierda" alt="Gustavo Cerati con un espejo cuadrado reflejando al fotografo. Posee ropa y fondo color amarillo"/>
+                    <p>Un año después del innovador y sorprendente Colores Santos, y a menos de un lustro de otros proyectos paralelos a Soda Stereo, como Plan V y Ocio, Gustavo Cerati dio forma a un álbum a solas que no estaba en sus planes. No se trataba del puntapié de una carrera solista, sino el resultado de un impulso creativo incontenible, mientras se encontraba en la dulce espera, viviendo en Santiago de Chile con mucho tiempo libre, sin el vértigo constante de su agenda con Soda. Son canciones acústicas y electrónicas a la vez, una colección adorable y amorosa, cautivante, encantadora y tierna, con toda la intimidad y sensualidad narcótica de discos de cabecera suyos como Artaud (Pescado Rabioso) o Joy (Ultra Vivid Scene). Luminoso y colorido, de punta a punta.</p>
+                    <img loading="lazy" src="images/amoramarillo3.jpg" class="img-derecha" alt="Gustavo Cerati, Cecilia Amenábar y Benito Cerati"/>
+                    <p>Nació casi por casualidad, en el exilio del líder de Soda y mientras esperaba su primer hijo (Benito); se convirtió en un disco clave en su carrera. María Cecilia Amenábar Granella , Tweety González, Zeta Bosio y Alejandro Ros reconstruyen la historia de canciones modernas aún hoy.</p>
+                    <img loading="lazy" src="images/amoramarillo4.jfif" class="img-izquierda" alt="Gustavo Cerati con una guitarra y descansando a su lado esta Cecilia Amenábar"/>
+                    <p>En agosto de 1993, aprovechando las vacaciones de la facultad de Amenábar -cursaba Diseño en la Universidad Católica-, la pareja viajó a Buenos Aires para terminar de grabar el disco y hacer la mezcla en el estudio de <strong>Soda Stereo, Supersónico</strong>. Con los once temas demeados, él se ocupó del rol del productor y llamó a Zeta Bosio, que también grabó algunos teclados, percusión y puso su bajo en "<strong>Amor amarillo</strong>", para tener una segunda opinión. "<em>A Gustavo le gustaba darse vuelta y tener gente atrás atenta. Tenía un tic con eso</em>", dice Tweety González, que participó del disco como consultor de audio. El resto del equipo lo integraron el ingeniero de grabación Mariano López, Taverna, y Eduardo "Barakus" Iencellena, asistente técnico del estudio y de Cerati.</p>
+                    <p>"<em>Venía todo hecho, por lo que nos llevó poco tiempo terminar el disco</em>", dice Taverna. "<em>Pasamos a 24 canales los demos y en unos días agregamos lo que faltaba: Gustavo metió algunos teclados, bajos, guitarras. Grabamos las voces bien, con un buen micrófono. Y ahí salió</em>". La batería, que en la grabación iba a estar a cargo de Daniel Colombres, terminó siendo la de los demos por el buen nivel que tenían. "<em>Fue muy rápida la parte de Buenos Aires</em>", agrega Tweety González.</p>
+                    <img loading="lazy" src="images/amoramarillo5.jpg" class="img-izquierda" alt="Gustavo Cerati en el auditorio FM 100"/>
+                    <p>En una cita íntima, el auditorio de FM 100 sirvió de escenario para que el viernes 15 de abril de 1994 unas 800 personas fueran testigos de un momento especial: la primera presentación solista de Gustavo Cerati. En un show unplugged (acústico), el guitarrista y compositor aprovechó para interpretar los temas de Amor Amarillo, su primer álbum solista, ante 100 espectadores dentro del estudio y unos 700 más que siguieron las alternativas desde las pantallas ubicadas en la calle Mansilla.</p>
+                    <img loading="lazy" src="images/amoramarillo6.jpg" class="img-derecha" alt="Foto desde afuera del auditorio FM 100 mientras se encuentran tocando en vivo Gustavo Cerati y Zeta Bosio"/>
+                    <p>Lo secundaron en la tarea Zeta Bosio (bajo) y Flavio Etcheto (guitarra) transitando por los mejores momentos en "Bajan" de Luis Alberto Spinetta, "Pulsar" y "Av. Alcorta". En medio de un cuidadosamente elegido clima intimista, Cerati realizó también una excelente versión de "Entre Caníbales", como para confirmar que la llama de Soda sigue viva. Por lo pronto, la repercusión inicial de su embestida solista no pudo ser mejor.</p>
+                    <p>CERATI: "<em>Quien no experimenta nostalgia es porque tiene una pésima memoria. Yo soy uno. Mi melancolía casi nunca está ligada al pasado, más bien es existencial y presente.</em>"</p>
+                    <img loading="lazy" src="images/amoramarillo7.jpg" class="img-derecha" alt="Foto casamiento de Gustavo Cerati con Cecilia Amenábar"/>
+                    <p>CERATI - AMOR AMARILLO: "<em>Amarillo es el color que yo le veo al amor. También lo asocio con toda la historia de generar vida en el útero de mi mujer... Además, el sol es amarillo, y creo que no hay nada que lo pueda superar en vitalidad. Silencio visual, con esa frase se resume la imagen del álbum. Llegar a lo despojado pero como producto de una gran complejidad. Se parece a esos discos que contienen todo el espectro de colores y que, al girarlos a mucha velocidad, se tornan blancos. En este caso, amarillo.</em>"</p>
+                    <img loading="lazy" src="images/amoramarillo8.jpg" class="img-izquierda" alt="Gustavo Cerati con Lisa Cerati"/>
+                    <p>CERATI - LISA: "<em>En realidad, es evidente que se desprende mucho de la idea de la canción </em>(LISA)<em>. Y de ahí un poco la idea era como tomar elementos de las profundidades del mar. Así como Colores Santos tenía que ver con el espacio, Amor Amarillo tiene más que ver con el mar. Yo disfruto muchísimo de ese misterio, de ese lugar al que uno no pertenece. Y siempre me pareció como algo interesante. Además había empezado a hacer buceo, de hecho en una de las partes del video tengo el traje de buceo que me había comprado hacía poquito, le hice unos engendros y terminó siendo como un ser también. Y en este caso también actúa Cecilia misma disfrazada de agua viva. A mí es uno de los videos que más me gusta por el clima que se logra.</em>"</p>
+                    <img loading="lazy" src="images/amoramarillo9.jpg" class="img-derecha" alt="Gustavo Cerati con Cecilia Amenábar en una moto"/>
+                    <p>CERATI: De una vida a otra vida... Para que me lleves... "<em>Por momentos me divierte hacer videos y por momentos no. Yo prefiero los videos en que todo ocurre con más inmediatez y menos premeditación como 'Te llevo para que me lleves'. Usé vestidos, hay un momento en que aparezco con un vestido en una pileta. Era esa un poco la diversión. Estaba viviendo en Chile, estaba viviendo el embarazo de Cecilia de lo que iba a ser o de lo que ya era Benito, mi primer hijo, y no teníamos mucho tiempo. Yo ya estaba terminando el disco y Cecilia, se ve, ya estaba de ocho meses y pico, ya ahí, a punto. Y nos fuimos a la montaña a filmar, fue todo muy divertido.</em>"</p>
+                    <div class="salto-float"></div>
+                    <img loading="lazy" src="images/amoramarillo10.jpg" class="img-derecha" alt="Foto de letra a mano de Gustavo Cerati de la canción Pulsar"/>
+                    <p>CERATI - PULSAR: "<em>Para mí, Pulsar es uno de los temas más de apertura del disco. Adoro esa canción y me parece que es un momento casi filosófico en la letra. Me gustó mucho cuando llegué a la construcción de esa canción. Y la sigo considerando como una muy importante, para mí.</em>"</p>
+                    <p>CERATI - PULSAR: "<em>Los pulsares son metrónomos cósmicos y se asemejan a corazones que laten en los confines del Universo. De una ecografía extraje una muestra de los latidos de mi hijo y los mezclé con el sonido de un géiser en ebullición. Eran tan parecidos e hipnóticos que me hicieron pensar que la vida es gas.</em>"</p>
+                    <img loading="lazy" src="images/amoramarillo11.jpg" class="img-izquierda" alt="Gustavo Cerati con Cecilia Amenábar. Mismo Cerati levantando una esfera de plastico"/>
+                    <p>CERATI - ROMBOS: "<em>Todas las canciones de Amor Amarillo fueron compuestas más o menos en la misma época. Exceptuando 'Rombos' que ya la había hecho casi para la época de Colores Santos y bueno, era una cosa que tenía ahí colgada y terminó tomando forma. 'Rombos' tiene una letra muy chiquitita y está extraída o movilizada por una pesadilla que yo tengo despierto, que es como una especie de lapsus. Me pasa desde chico y a lo largo de la vida varias veces. Son minutos que parecen siglos... Por ahí estoy hablando con vos y me viene como una angustia muy fuerte... la imagen es una pared de rombos lumínicos puestos es una perspectiva estremecedora. Y una voz ultra-familiar quee está diciendo algo como eso: cómo es todo. No sé qué es. Me ha pasado en cualquier lado. Es recurrente. Es siempre igual o parecido. Pero nunca llego a entender qué quiere decir y me asusta y me conmueve, y a la vez es algo que me atrae muchísimo. Es un poco como un deja vu, pero no necesito tener ninguna relación con nada externo. Ojalá uno pudiera describir eso en una canción. Lo que trato de hacer cuando tengo experiencias de ese tipo, o extrasensoriales, es escribir sobre ellas. Porque son ricas, tienen cosas ahí que descubrís. No me quedo contento nada más con la experiencia, necesito escribir sobre ello. Después es como un pálido reflejo en realidad de lo que viví.</em>"</p>
+                </div>
+                <aside id="contenedor_amarillo" class="contenedor-curiosidad">
+                    <div class="div-curiosidad">
+                        <button id="curiosidad_amor" class="btn-curiosidad">CURIOSIDAD</button>
+                    </div>
+                    <div id="TEXTO-CURIOSIDAD1" class ="texto-curiosidad">
+                        <img loading="lazy" src="images/curiosidad1.jfif" class="img-izquierda" alt="Foto de primer casamiento de Gustavo Cerati con Belén Edwards"/>
+                        <p>Gustavo Adrián Cerati se caso 2 veces: con Belén Edwards en abril de 1987 en Buenos Aires (duro solamente un año) y con María Cecilia Amenábar Granella en 1993 en la parroquia Sagrada Familia de Santiago de Chile (duro 9 años y se separaron en febrero de 2002).</p>
+                    </div>
+                </aside>
+                <div class="contenedor-flecha">
+                    <button type="button" class="boton_arriba">
+                        <img class="flecha_arriba" src="images/SVG/flecha-arriba.svg" alt="flecha hacia arriba top">
+                    </button>
+                </div>
+            </article>
+            <article id="BOCANADA" class="articulo_discos display_ninguno opacidad">
+                <div class="discografia">
+                    <div class="cerrar">
+                        <img class="logo-x" src="images/SVG/x-blanco.svg" onclick="cerrar()">
+                    </div>
+                    <h3>BOCANADA</h3>
+                    <img src="images/bocanada1.jpg" class="presentacion" alt="Gustavo Cerati con una camisa verde">
+                    <h4>FECHA DE LANZAMIENTO: 28/06/1999</h4>
+                    <p>Ahora sí, tras la despedida multitudinaria y de proporciones olímpicas de El Último Concierto de Soda Stereo, llegó la hora de dar el primer paso en el inicio de una carrera solista. A los 39 años, Gustavo Cerati encara el verdadero salto a la ruta solista sin pasaje de vuelta hacia el trío -como sí había ocurrido después de editar Amor amarillo en 1993-. Pero no hubo apuro, presiones ni procesos tortuosos, y cada paso en el camino de Bocanada fue meditado con tiempo. El material fue surgiendo naturalmente, capitalizando la experiencia y el oficio, pero también jugando en forma lúdica, hasta desembocar en un álbum impactante, ambicioso, romántico y sofisticado, al punto de usar tecnología de punta y grabar con una orquesta sinfónica en Abbey Road. Hay colaboraciones claves de letristas e instrumentistas, y el babel de idiomas musicales de la cabeza de Gustavo confluye en una belleza única, digital y barroca.</p>
+                    <img loading="lazy" src="images/bocanada2.jpg" class="img-derecha" alt="Gustavo Cerati mirando pensativo con lentes de sol"/>
+                    <p>CERATI: "<em>Con mi proyecto solista recién arranqué en estos días. Sigo con BMG, renegocié por una cantidad de discos en la que aparezco como solista. La idea es que eso me impulsa a comprometerme a hacerlo. Ahora tengo la pauta de hacer un disco que probablemente saldría en abril o mayo del año que viene. Estoy creando esa persona solista que se viene. Todo lo que pasa hoy por mi cabeza es ecléctico. Ojalá ahora por fin pueda ser lo suficientemente ecléctico que quiero ser y nunca lo consigo... ya no tengo que canalizar lo que hago según lo que puede ser o no para un grupo. Ahora soy libre. Temas como '<strong>Tu medicina</strong>' de Colores Santos es una mezcla de guitarra y electrónica y es ahí donde más cómodo me siento. El mayor porcentaje del disco va a ser canciones. Estoy necesitando de ellas. Desde que conquisté la primera chica, que fue con una canción, el formato está muy presente en mí.</em>"</p>
+                    <img loading="lazy" src="images/bocanada3.jpg" class="img-derecha" alt="Gustavo Cerati con sombrero casual y abrigo negro. Usando lentes normales"/>
+                    <p>CERATI: "<em>Veo a Bocanada como una especie de almohadón en el que uno puede recostarse. Para mí empieza una era muy importante en mi vida, digamos, este disco es la primera cosa que hago con una sensación más de futuro. Empiezo como solista.</em>"</p>
+                    <p>CERATI: "<em>Siempre estoy más entusiasmado con lo que estoy haciendo como novedad, para mí, como desafío. No es que esté obsesionado con lo nuevo o con la modernidad. Sí me parece que es importante estar atento a lo nuevo, porque ahí está la renovación de las cosas y hay más posibilidades de encontrar algo diferente. Ser moderno o ser clásico, en este caso, tiene que ver con micropersonajes que conviven dentro de uno.</em>"</p>
+                    <p>CERATI: "<em>Al margen de las cosas que pueda hacer como artista, músico o compositor, en mí se ha visto una especie de polo informativo. A la gente le interesa saber qué estoy escuchando, por ahí porque piensan que lo que voy a hacer se relaciona con la vanguardia..., pero no me siento así. Sí me interesa investigar con nuevos sonidos, o trabajar con colaboraciones, con gente que me estimula.</em>"</p>
+                    <img loading="lazy" src="images/bocanada4.jpg" class="img-derecha" alt="Gustavo Cerati mirando lo que hay afuera a traves de una ventana dentro de un auto"/>
+                    <p>CERATI: "<em>El lugar que uno ocupa a partir de todo lo que pasó con Soda Stereo es un lugar privilegiado. Por un lado, siento la responsabilidad de hacer mejor música; y por otro lado, sé que yo funciono como antena de la música que me gusta hacer y de lo que observo a mi alrededor y es captado por una cantidad de gente de forma masiva.</em>"</p>
+                    <p>CERATI: "<em>Pero no quiero tener una sola imagen de mí mismo. ¿Por qué? Porque ya hay demasiada postura en el músico de rock, dentro de los que me incluyo como músico de la cultura rock, que tiende a anquilosarse: esto es lo que elijo y con esto vivo y muero. Ni haciendo fuerza puedo convertirme en eso. Estoy dispuesto a traicionarme todas las veces que sean necesarias.</em>"</p>
+                    <img loading="lazy" src="images/bocanada5.jpg" class="img-izquierda" alt="Gustavo Cerati tocando en vivo con su guitarra Gibson ES-335">
+                    <p>CERATI: "<em>A pesar de toda la tecnología, Bocanada es un disco básicamente romántico. En algún punto es poético hasta la exageración. Pero es mi decisión: yo quise que ése fuera su perfil. Es un álbum en el que la melancolía juega un papel muy importante, pero intento que nos lleve hacia una situación eufórica a través de la música. Que vos percibas la melancolía de las melodías, de los arreglos y de las letras, pero que el todo tienda hacia la felicidad, de todas maneras. Eso es lo que intento conseguir con mi música. Cuando vi que el efecto que producía en la gente que lo escuchaba era feliz me dije: <strong>‘Estoy bien, está lejos de ser un capricho’</strong>.</em>"</p>
+                    <img loading="lazy" src="images/bocanada6.jpg" class="img-derecha" alt="Foto de concierto Homenaje a Cerati: Gracias Gustavo con el fondo del videoclip de la canción Puente">
+                    <p>CERATI - PUENTE: "<em>Aunque puede leerse como una canción de amor, lo escribí pensando en la gente. Nunca lo había hecho, pero tiene que ver con la cantidad de personas que me ha parado por la calle para preguntarme cuándo iba a salir mi disco, qué iba a hacer o si se volvía a juntar Soda. Son situaciones poderosas con las que convivo cotidianamente. Me acuerdo del juego de sintaxis: '<strong>por venir</strong>', '<strong>por venir</strong>' y el '<strong>porvenir</strong>'... Y '<strong>Puente</strong>' es pura imaginación en realidad, tampoco es que estoy hablando de nadie en especial, la verdad es esa. Es la única canción en donde incorporo un poco la idea del público, o lo que puede llegar a pasar con esa canción cuando la estás haciendo con gente. Y esa idea de aquello que estaba separado y hoy está junto. Y me acuerdo de estar escribiéndola y decir: '<strong>Esto está buenísimo</strong>' porque me imagino cantándola en vivo con la gente y el puente que se genera de energía.</em>"</p>
+                    <img loading="lazy" src="images/bocanada7.jpg" class="img-izquierda" alt="Backstage del videoclip Puente con Gustavo Cerati usando solamente ropa blanca y de fondo el cielo celeste">
+                    <p>CERATI - PUENTE: "<em>Es un poco el viaje hasta acá. Resume cosas mías de antes y de ahora. La canción pop: un poquito grandiosa, muy comprimida y en el fondo armada sobre una guitarra criolla. También es la experiencia británica. Un concepto de sonido que me gusta mucho. Cuando escuché Massive Attack quise ir a buscar ese bajo. Pero las influencias son muchas: un disco que se llama 'Las alturas de Machu Pichu', más DJ Shadow, más Beach Boys, más Wunder, un alemán instrumental con una dulzura que hacía mucho tiempo que no escuchaba. La recuperación de la dulzura, frente a lo que escucho. Creo que ése es mi lugar.</em>"</p>
+                </div>
+                <aside id="contenedor_bocanada" class="contenedor-curiosidad">
+                    <div class="div-curiosidad">
+                        <button id="curiosidad_bocanada" class="btn-curiosidad">CURIOSIDAD</button>
+                    </div>
+                    <div class="input-curiosidad">
+                        <div id="texto_bocanada1" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad2.jpg" class="img-derecha" alt="Gustavo Cerati tocando con su boca las cuerdas de su guitarra Gibson ES 335"/>
+                            <p>CERATI: "<em>Mucha gente me dijo que ha tenido muchas experiencias sexuales con discos míos, especialmente con Bocanada, un poco más tranquilo y sugerente. La sexualidad es un motor potentísimo en mi vida y supongo que en la mayoría. Está impresa en mi música. No siempre es una cosa que busque a propósito, pero de golpe un ritmo sexy, que tenga suficiente carga por su tempo, por ejemplo '<strong>He visto a Lucy</strong>'. '<strong>Convoy</strong>' es un poco más infantil pero seguramente hay una unión sexual, un polvo cósmico. Quizás está de una forma más dosificada que en otras épocas, donde a lo mejor eran un tema recurrente. Hoy el tema recurrente está dentro de mí, pero no necesariamente en la obra.</em>"</p>
+                        </div>
+                        <div id="texto_bocanada2" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad3.jfif" class="img-derecha" alt="Algunas fotos impresas de lo que fue la sesión de fotos para la portada bocanada. En cada uno de las fotos hay varias versiones de Gustavo Cerati tirando bocanadas de humo"/>
+                            <p>CERATI: "<em>¿Y si el humo está en foco?</em>"</p>
+                            <p>La pregunta se la hizo Gustavo Cerati a la fotógrafa Gaby Herbstein durante la sesión de tapa de Bocanada, el disco de 1999 que reinventó la carrera del líder de Soda Stereo. Estaban en el estudio que tenía ella en Fitz Roy y Niceto Vega, y el humo de los Jockey Suaves de Cerati remaba en espiral hasta formar un banco de niebla que le borraba la cara. "<em>Pará</em>", le había dicho Gaby, "<em>tanto humo me hace perder el foco</em>". La improbable solución que encontró Cerati -invertir los planos de nitidez entre él y la combustión lenta del pucho- terminó dándole el título a un tema esencialmente instrumental de Bocanada, "<em>Y si el humo está en foco</em>". Y la escena capturó el tono y la estética de ese álbum intrigante, nocturno y lleno de texturas, el azul profundo de la mente musical de Cerati.</p>
+                            <p>GABY HERBSTEIN: "<em>Siento que fue ayer que estábamos en mi estudio de Palermo encerrados en una nube... Gustavo echando humo de cientos de formas que recortaban misteriosas en el contraluz. Recuerdo que la nube se puso en un momento tan densa que era durísimo enfocar! Le pido a Gus que pare un momento porque no podía con el foco y él me dice... '<strong>¿Y si el humo está en foco?</strong>' Se ríe y se queda pensando. Y cuando finalmente sale el disco y leo la lista de temas me sorprendo! A uno de los temas le había puesto esa frase como título.</em>"</p>
+                        </div>
+                        <div id="texto_bocanada3" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad4.jpg" class="img-derecha" alt="Doble portada. A la izquierda la portada del disco Bocanada de Gustavo Cerati. A la derecha la portada del disco Greatest Hits de Bob Dylan"/>
+                            <p>CERATI: "<em>Había una idea de tapa que incluía humo, noche y estrellas. Estoy yo largando humo en un lugar así entre misterioso, clásico y glamoroso... Y también es una bocanada de aire, como algo fresco, nuevo.</em>"</p>
+                            <p>GABY HERBSTEIN: "<em>Como inspiración, Alejandro Ros me muestra la tapa de Bob Dylan de “Greatest Hits” (el perfil enrulado a contraluz) y algunas otras de David Bowie. Preparo el set con un fondo de papel azul noche y lo ilumino con gelatinas azul eléctrico para rematar. Flashes de contra y de frente luces puntuales. Pero el humo terminó haciendo su propia alquimia.</em>"</p>
+                            <img loading="lazy" src="images/curiosidad5.jfif" class="img-izquierda" alt="Gustavo Cerati con perfil oscuro tirando una bocanada de humo a un rubi rojo. Fondo color azul"/>
+                            <p>GABY HERBSTEIN: "<em>El disco no iba a llamarse Bocanada originariamente. Según me contaba Gustavo la idea era que se llame algo así como '<strong>Rubí</strong>', pero no estaba muy convencido... Igualmente pinté con esmalte de uñas rojo un rubí de acrílico para ser usado en las tomas. La mano que se ve es la de Cecilia Amenábar, mi bella amiga, mamá de Benito y Lisa.</em>"</p>
+                            <p>GABY HERBSTEIN: "<em>Ese Cerati abrigado con piel, un rey al otro lado del muro glam, se convirtió en el primer ícono de su etapa solista, y los descartes son igualmente impresionantes. Cuando lo que pasa en una toma supera el plan... bueno, para esos momentos es que soy fotógrafa. Cuando se produce eso en un shooting, la única palabra que se me ocurre es magia.</em>"</p>
+                        </div>
+                        <div class="contenedor-rango">
+                            <input type="range" value="1" min="1" max="3" autocomplete="off" step="1" list="ticks1" class="rango_defecto rango_bocanada">
+                            <datalist id="ticks1" class="lista_defecto">
+                                <option id="op1" data-value="primero" class="opcion_defecto opcion_bocanada">Opción 1</option>
+                                <option id="op2" data-value="segundo" class="opcion_defecto opcion_bocanada">Opción 2</option>
+                                <option id="op3" data-value="tercero" class="opcion_defecto opcion_bocanada">Opción 3</option>
+                            </datalist>
+                        </div>
+                    </div>
+                </aside>
+                <div class="contenedor-flecha">
+                    <button type="button" class="boton_arriba">
+                        <img class="flecha_arriba" src="images/SVG/flecha-arriba.svg" alt="flecha hacia arriba top">
+                    </button>
+                </div>
+            </article>
+            <article id="SIEMPRE_ES_HOY" class="articulo_discos display_ninguno opacidad">
+                <div class="discografia">
+                    <div class="cerrar">
+                        <img class="logo-x" src="images/SVG/x-blanco.svg" onclick="cerrar()">
+                    </div>
+                    <h3>SIEMPRE ES HOY</h3>
+                    <img src="images/siempre1.jpg" class="presentacion" alt="Gustavo Cerati tocando en vivo con su guitarra G&L Asat Classic">
+                    <h4>FECHA DE LANZAMIENTO: 26/11/2002</h4>
+                    <img loading="lazy" src="images/siempre2.jfif" class="img-izquierda" alt="Cuadro reflejando como disco de oro en Argentina el album siempre es hoy"/>
+                    <p>Editado en CD y cassette, y convirtiéndose además en Disco de Oro en Argentina.</p>
+                    <p>Siempre es hoy fue, a la distancia, tal vez el disco más arriesgado en la carrera de Gustavo Cerati. En el punto máximo de su alejamiento de Soda Stereo, este disco fue editado el 26 de noviembre de 2002 y cosechó críticas dispares. Desde Bocanada habían pasado ya 3 años y en el medio hubo 2 discos (<strong>+ Bien</strong> y <strong>11 Episodios sinfónicos</strong>) que mitigaban la espera de la salida del primer disco de canciones nuevas de Cerati del nuevo milenio. Producido por 2 músicos de la banda mexicana Control Machete, quizás ahí resida el germen del error que hizo de SEH un disco que no supo estar a la altura de sus compañeros de escudería. También atentaron contra el resultado artístico de la placa la extensión en el tiempo de las sesiones de grabación, iniciadas en 2001 y los parates que tuvo en el medio, sumado a la ruptura matrimonial con Cecilia Amenábar luego de develarse la relación que mantenía con Deborah De Corral (quien aparece en el disco y también parcialmente en la contratapa del mismo)</p>
+                    <img loading="lazy" src="images/siempre3.jpg" class="img-derecha" alt="Gustavo Cerati en estudio frente a un microfono"/>
+                    <p>CERATI: "<em>Siempre es hoy es un disco que en el trayecto de grabación tuvo desde la caída de las Torres hasta el desastre argentino del 20 de diciembre y está muy influenciado por el reality show. Es la primera vez que me tomó tanto tiempo hacer un disco. Este disco arrancó por lo más primitivo: el ritmo y una dosis de armonía. Tenía ganas de hacer un disco rítmico, potente, influido por la música que estaba escuchando, porque tenía ganas de tocar así a diferencia que en Bocanada, que es mucho más sutil. Quería más impacto...</em>"</p>
+                    <img loading="lazy" src="images/siempre4.jpg" class="img-izquierda" alt="Gustavo Cerati tocando en vivo con su guitarra G&L Asat Classic"/>
+                    <p>CERATI: "<em>Es un disco que celebra la vida. Hay amor, desamor, enojo, dulzura... Pero por sobre todo es una celebración del presente en todos sus matices, a través de un paquete de 17 canciones. Muy íntimo, pero a la vez extrovertido. Directo y claro, sin demasiadas sutilezas, rescatando lo más simple. Lo veo como el más potente, groovy y rockero de todos mis discos.</em>"</p>
+                    <p>CERATI: "<em>Me doy cuenta de que persigo una belleza poética, porque mis letras tienen un poco de eso. Pero también es una trampa, porque podés estar ahí, dando vueltas alrededor de algo, y no es más que una cáscara. A veces hay que reconocer que las letras cumplen la función de ponerle contenido a lo que quiero cantar como melodía. Pero, te guste o no, al final llegás a un tipo de concepto. También está el músico que se preocupa tanto por la poesía que se va de mambo. En mi caso, las canciones más románticas que escribí no surgieron por estar enamorado, sino por añorar o profetizar un estado ideal.</em>"</p>
+                    <img loading="lazy" src="images/siempre5.jpg" class="img-derecha" alt="Gustavo Cerati en el campo afueras de la ciudad"/>
+                    <p>CERATI: "<em>El presente continuo que estamos viviendo involucra el pasado. El hoy es la suma de todo eso: cuando uno expresa su amor y dice te quiero para siempre, ese siempre, es hoy, aunque parezca ser infinito. Con esa idea le puse ese nombre.</em>"</p>
+                    <p>CERATI: "<em>Es como una puerta hacia todos los tiempos, en realidad. En el hoy se aglutinan todos los tiempos, esa es la sensación que tengo. El hoy es como el futuro, o deseo que sea como el futuro. O deseo que no sea como el pasado... Al mismo tiempo, el sentido del título del disco es una celebración (y el disco, diría), a pesar de que tenga momentos y momentos. No es una prisión temporal, todo lo contrario. Incluso los momentos más '<strong>ásperos</strong>' son celebraciones de la vida, con todos sus vaivenes...</em>"</p>
+                    <img loading="lazy" src="images/siempre6.jpg" class="img-derecha" alt="Foto de Gustavo Cerati mirando pensativo extraido del videoclip Siempre es Hoy"/>
+                    <p>CERATI - SIEMPRE ES HOY: "<em>Porque la situación del tiempo en el disco se repite bastante. Básicamente, es el estribillo de una canción que habla de esa celebración. '<strong>Siempre es hoy</strong>', para mí, no es una prisión como concepto. Alguna vez también escribí '<strong>Ahora es nunca</strong>'. Es casi lo mismo, pero el '<strong>Siempre es hoy</strong>' es celebratorio. Esa es la sensación que yo tengo. El presente continuo que estamos viviendo involucra el pasado, le estamos poniendo fecha a lo que nos ocurre, pero esa fecha queda inmediatamente detrás de otra. Pero el hoy es la suma de todo eso: cuando uno expresa su amor y dice 'te quiero para siempre', ese siempre es hoy, aunque parezca ser infinito, como cualquier otra emoción. Con esa idea le puse ese nombre.</em>"</p>
+                    <img loading="lazy" src="images/siempre7.jpg" class="img-derecha" alt="Gustavo Cerati mirando al horizonte con su mano en su frente para cubrirse del sol. Lugar en el campo, afueras de la ciudad"/>
+                    <p>CERATI - VIVO: "<em><strong>VIVO</strong> es una de las mejores canciones que he hecho jamás, por lejos. Me encanta. Es una canción que no se pudo parar, como si fuera '<strong>música ligera</strong>' pero aún más todavía. Para mí no tiene un solo desperdicio. Era un momento en que la vida te está tironeando mal, cuando sentía así: ¿Para dónde voy, para la alegría o para la tristeza total? Ese momento como tan confuso... Ahí es como salió: ok, ¡Vivo! Esto es vivir. Y yo tenía esa sensación y no se pudo parar. Esa canción se escribió sola. Me vinieron imágenes que me emocionaron de estar vivo.</em>"</p>
+                    <div class="salto-float"></div>
+                </div>
+                <aside id="contenedor_siempre" class="contenedor-curiosidad">
+                    <div class="div-curiosidad">
+                        <button id="curiosidad_siempre" class="btn-curiosidad">CURIOSIDAD</button>
+                    </div>
+                    <div class="input-curiosidad">
+                        <div id="texto_siempre1" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad6.jpg" class="img-izquierda" alt="Imagen completa pintada a oleo de la tapa del disco Siempre es Hoy"/>
+                            <p>En principio, la idea era presentarlo como un disco doble, ya que se contaba con mucho material, pero finalmente terminó siendo editado en un único disco debido a la situación económica que atravesaba la Argentina. Esta misma idea se congelo hasta el siguiente año, cuando se lanzó ‘<strong>Siempre Es Hoy</strong>’.</p>
+                            <p>CERATI: "<em><strong>Siempre es hoy</strong> me parece un disco muy bueno, pero tuvo sus problemas: como no pudo ser un álbum doble, metí toda la cantidad de temas que entran en el espacio de un sólo disco. Y a lo mejor esa lectura requiere una conducción más lenta, porque resulta complejo entender un disco con tantos temas. Pero bueno, tuvo que ver con la voracidad y con una ansiedad por mostrar todo lo que estaba haciendo. Y a veces, eso te hace olvidar el espíritu crítico… En este disco quise ser más afilado y me impuse preconceptos: tenía que tener trece temas, por ejemplo. Ni doce ni catorce, trece. Igual, no soy una persona que vaya siempre por el mismo camino, me gustan muchas cosas. Entonces aparecen temas que son muy explosivos y rockeros, y también otros que van por otro lado. En algún punto, me extendí menos y fui más directo. No quería que los temas se salieran de la ruta.</em>"</p>
+                        </div>
+                        <div id="texto_siempre2" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad7.jpg" class="img-izquierda" alt="Foto de publicidad del videoclip No Te Creo en una calle de la Ciudad Autónoma de Buenos Aires"/>
+                            <p>Con el lema “<strong>No lo creo</strong>”, las redes sociales de Gustavo Cerati anunciaron el 3 de agosto de 2021 que el 11 (aniversario del nacimiento del músico) se daría a conocer el videoclip inédito de “<strong>No te creo</strong>”.</p>
+                            <p>El video fue filmado en 2004, en la época de la gira “<strong>Canciones elegidas</strong>”, y en el mismo aparece Gustavo tocando en su estudio Unísono junto con la banda que lo acompañaba en aquel momento: Fernando Nalé, en bajo; Leandro Fresco y Flavio Etcheto, en teclados; y Pedro Moscuzza, en batería.</p>
+                            <img loading="lazy" src="images/curiosidad8.jpg" class="img-derecha" alt="Tocando playback Gustavo Cerati, Fernando Nalé, Leandro Fresco, Flavio Etcheto y Pedro Moscuzza"/>
+                            <p>DIEGO PANICH: “<em>La única condición que puso Cerati fue que lo teníamos que hacer rápido, sin un gran despliegue, así que fuimos con la cámara y un par de luces nomás. Hicimos muy pocas tomas del tema, tal vez cuatro. La particularidad es que el video es en cámara lenta y todo tiene sincro. El truco es que la banda tocó el playback a doble velocidad. Es muy difícil y engorroso de hacer pero Gustavo y la banda estaban copados con la idea e hicieron todo sin drama.</em>”</p>
+                            <p>MARIANO LEMON: "<em>Todo lo que le pedimos lo agarró en un segundo. Tenía una magia que no me la voy a olvidar más. Fue una experiencia que agradezco haber vivido.</em>"</p>
+                        </div>
+                        <div class="contenedor-rango">
+                            <input type="range" value="1" min="1" max="2" autocomplete="off" step="1" list="ticks1" class="rango_defecto rango_siempre">
+                            <datalist id="ticks1" class="lista_defecto">
+                                <option id="op1" data-value="primero" class="opcion_defecto opcion_siempre">Opción 1</option>
+                                <option id="op2" data-value="segundo" class="opcion_defecto opcion_siempre">Opción 2</option>
+                            </datalist>
+                        </div>
+                    </div>
+                </aside>
+                <div class="contenedor-flecha">
+                    <button type="button" class="boton_arriba">
+                        <img class="flecha_arriba" src="images/SVG/flecha-arriba.svg" alt="flecha hacia arriba top">
+                    </button>
+                </div>
+            </article>
+            <article id="AHI_VAMOS" class="articulo_discos display_ninguno opacidad">
+                <div class="discografia">
+                    <div class="cerrar">
+                        <img class="logo-x" src="images/SVG/x-blanco.svg" onclick="cerrar()">
+                    </div>
+                    <h3>AHI VAMOS</h3>
+                    <img src="images/ahi1.jpg" class="presentacion" alt="Gustavo Cerati tocando en vivo con su guitarra Gibson Les Paul Classic. Lo acompaña en la foto Leandro Fresco, Fernando Samalea y Fernando Nalé">
+                    <h4>FECHA DE LANZAMIENTO: 04/04/2006</h4>
+                    <p>Todo comenzó a tomar forma en los primeros meses de 2005, cuando tuvo listo su estudio de grabación propio, que bautizó <strong>Unísono</strong> y que había montado en una vieja fábrica de zapatos que encontró Mirta Magallanes, la mujer de su fiel asistente de guitarras, Eduardo “Barakus” Iencenella, en el barrio de Florida.</p>
+                    <img loading="lazy" src="images/ahi2.jpg" class="img-izquierda" alt="Foto casual. A la izquierda Deborah de Corral. A la derecha Gustavo Cerati"/>
+                    <p>También se había puesto en pareja con Deborah de Corral, tras un divorcio muy mediático de Cecilia Amenábar, con infidelidades cruzadas; ella, con Francisco Bochatón, el líder de Peligrosos Gorriones, que había hecho una letra junto a Cerati en Bocanada.</p>
+                    <p>Pero después de unos dos años con Deborah, ella lo dejó por Ezequiel Araujo, el tecladista de "<strong>El Otro Yo</strong>" que había ingresado en el Universo Cerati como productor del disco que Leo García grabó en el debut del estudio <strong>Unísono</strong>. Tenia 45 años y por primera vez una mujer lo había dejado.</p>
+                    <img loading="lazy" src="images/ahi3.jpg" class="img-derecha" alt="Foto de la banda. De izquierda a derecha: Fernando Samalea,Leandro Fresco, Gustavo Cerati, Fernando Nalé y Richard Coleman"/>
+                    <p>“<em>Gustavo estaba acomodándose tras la separación de Deborah, Tweety había sufrido un ataque al corazón post-divorcio y Richard se había ido de su casa y dejado el alcohol. Era un grupo de amigos que atravesaba las turbulencias de los cuarenta y pico, una banda de corazones rotos encerrándose a tocar rock para sanar sus heridas.</em>”</p>
+                    <img loading="lazy" src="images/ahi4.jpg" class="img-izquierda" alt="Gustavo Cerati posando con su guitarra en un gesto de desafiante. En el fondo con efecto de lluvia"/>
+                    <p>Asi comienza a nacer el disco como Explosivo, rockero o "guitarrero" a secas. A la hora de desmarcarse de algunas etiquetas que le endilgaron durante el primer lustro de la década del 2000, Cerati decidió sacudir todos los preconceptos con un trabajo poderoso, desbordante de energía y más que apto para aumentar la fuerza de los conciertos de sus giras. Y si bien el primer corte fue una audaz apuesta por una inesperada balada rockera clásica, el álbum es un despliegue constante de poderío valvular, riffs de antología y solos magistrales. Inspirado y eléctrico, es realmente memorable y su proximidad en la línea del tiempo no debe conspirar en poder catalogarlo como un verdadero clásico del rock argentino.</p>
+                    <img loading="lazy" src="images/ahi5.jpg" class="img-derecha" alt="Gustavo Cerati tocando en vivo con su guitarra G&L Legacy HB"/>
+                    <p>CERATI (La historia detrás del título): "<em>El leitmotiv del título lo tomé de la expresión '<strong>ahí va</strong>'. <strong>Ahí vamos</strong> es más una cuestión social: el '<strong>ahí</strong>' es menos importante que el '<strong>vamos</strong>'. Al principio, el disco iba a llamarse '<strong>Llevame a un lugar con parlantes</strong>', que es una frase que figura en uno de los temas, pero después me pareció que podía resumirlo mejor con este título. No sé hacia dónde vamos, y no sé si importa saberlo. Lo interesante es poner el acento en eso de estar moviéndose. ¿Qué otra cosa puedo hacer más que moverme? En ese aspecto, el estado de ánimo de este disco es enérgico y positivo.</em>"</p>
+                    <p>CERATI: "<em>El álbum está muy enfocado hacia la guitarra, la voz y la forma clásica de la canción: estrofa, estribillo, puente. Lo hice porque quería que el disco tuviera una dirección y no fuera heterogéneo como otros. Es un disco de rock, con energía de rock. Sería como una especie de manual del Cerati ilustrado que tiene puntos de contacto con muchas cosas. La gente va a encontrar familiaridad con cosas que hice con Soda Stereo, pero también con discos solistas míos. Nada se pierde.</em>"</p>
+                    <img loading="lazy" src="images/ahi6.jpg" class="img-izquierda" alt="Gustavo Cerati caminando en la calle con un fondo oscuro de lluvia. Lleva puesto un abrigo negro que llega a sus rodillas, pantalon negro y carga en su mano derecha su guitarra en una funda"/>
+                    <p>CERATI: "<em>He realizado discos que han sido más o menos exitosos, pero no viví una época de hacer discos que nadie quiso o que a nadie le importaban... Pienso que he realizado aportes porque son muchos los años que estoy en esto y son muchos discos los que hice... Aunque, a veces, eso no signifique demasiado, para mí significa mucho porque es mi trabajo y lo que hice durante todo este tiempo. Además, creo que he aportado canciones que han sido valiosas y que han significado emocionalmente algo importante para mucha gente. Y fui parte de uno de los grupos más importantes que han existido en la Argentina e, incluso, en Latinoamérica. Teóricamente, hay muchos logros que me ponen en un lugar de privilegio. Pero, al fin y al cabo, la verdad es que tengo muy poca perspectiva de mí mismo. No es algo que ensaye hacer muy a menudo, ni mucho menos. Y, por otro lado, cada vez que me pongo a hacer un disco nuevo, siento la misma sensación: como si no hubiera hecho nada antes.</em>"</p>
+                    <img loading="lazy" src="images/ahi7.jpg" class="img-derecha" alt="Gustavo Cerati descansando su cabeza en el microfono durante el concierto"/>
+                    <p>CERATI: "<em>Me parece que no he tenido, desde el punto de vista de mi trayectoria, altibajos tan potentes como han tenido otros músicos. Me da la impresión de que la sociedad, sobre todo en Argentina, necesita que sus artistas lleguen a estados como de tortura o de visible degradación. Hay muchos ejemplos, ni siquiera tengo ganas de darlos, pero muchísimos ejemplos en donde antes de su disco glorioso el pibe prácticamente era un paria en su propio lugar. Pareciera que a veces el público argentino necesita eso.</em>"</p>
+                    <img loading="lazy" src="images/ahi8.jpg" class="img-izquierda" alt="Gustavo Cerati posando de frente dirigiendo su mirada hacia un costado"/>
+                    <p>CERATI: "<em>A mí quizá se me pide mucho porque no he pasado de modo visible por esa situación, no soy inmune a que me pase, pero no he pasado por esa situación. Yo necesito separar, que el escenario sea otra cosa. Por eso el glam. Me causa risa eso de “las bandas que salen de la gente”. ¿De dónde salen, si no? Mi filosofía, de algún modo, no ha sido traicionada, he sido fiel a mí. Otros sufren, padecen cuando abandonan su identidad o la traicionan al crecer. No hablo de los que tienen ideas políticas sino de los políticamentecorrectos que terminan haciendo jingles, que no superan la idea del estribillo. Ahora estoy trabajando sobre la profundidad del campo pop. Hacer música rock en 3-D, sin orquesta ni sampler. Con guitarras.</em>"</p>
+                    <img loading="lazy" src="images/ahi9.jpg" class="img-izquierda" alt="Foto detras de camara de Gustavo Cerati realizando el videoclip Lago en el Cielo"/>
+                    <p>CERATI - LAGO EN EL CIELO: "<em><strong>Lago en el cielo</strong>..., es como un lugar donde me gusta estar. No quiere decir que esté todo el tiempo ahí, pero cuando estoy ahí me gusta y disfruto de estar en ese lugar. En esa canción digo: Vamos despacio para encontrarnos. Si bien todo está superrockero, tengo una mirada reflexiva... Cosas que te van pasando en la vida, también, te dicen: ¡Eh, pará, mirá un poco lo que ocurre.</em>"</p>
+                    <img loading="lazy" src="images/ahi10.jpg" class="img-derecha" alt="Gustavo Cerati maquillado y tocando alrededor de él cuatro manos ajenas"/>
+                    <p>CERATI - OTRA PIEL: "<em><strong>Otra Piel</strong> es la sensación esa de estar, digamos, distanciado de alguien a quien uno quiere ver y, bueno, pensaba en esos mensajes de texto, pensaba en las cartas, pensaba en todo aquello que usamos para acercarnos pero que, digamos, concretamente no nos acerca en forma física, pero nos permite jugar, desde lo más erótico a la situación más amigable, amable o lo que sea. Un poco eso, ¿no? El lenguaje como otra forma de tocarse. Es, probablemente, uno de los temas más suaves por así decirlo, del disco, quizás el único así, como de un aspecto más paisajístico.</em>"</p>
+                    <div class="salto-float"></div>
+                    <img loading="lazy" src="images/ahi11.jpg" class="img-derecha" alt="Foto de letra escrita a mano de la canción Medium y firmada por él"/>
+                    <p>CERATI - MEDIUM: "<em><strong>Médium</strong> nace de una visita que hice con mis hijos al <strong>Museo Metropolitano</strong>, en <strong>Nueva York</strong>, donde vimos una muestra que representaba en fotografía el trabajo de diferentes médiums. Y bueno, todo lo relacionado con espiritismo y apariciones y fotografías, la mayoría de ellas trucadísimas como la de ovnis pero, en el fondo, de cien siempre hay una que nadie puede explicar cómo se hizo y ya esa es suficiente como para que uno termine, digamos, dándole crédito a eso. De hecho nos compramos un libro y lo estuvimos leyendo… y yo fui en una época muy fan de esa parte, así como oculta… tengo muchos libros. Me dedicaba a tratar de desenmascarar lo oculto.</em>"</p>
+                    <img loading="lazy" src="images/ahi12.jpg" class="img-izquierda" alt="Gustavo Cerati posando frente a un vidrio y al mismo tiempo rompiendose en donde se encuentra su cara"/>
+                    <p>CERATI - MEDIUM: "<em>Estuve varios años metido en esa ambivalencia, que enfrenta mi lado escéptico con el otro que quiere creer, me llevó a leer de todo. Es imposible resistirse al misterio. Me apasionaba mucho eso y así como escribí "<strong>Telequinesis</strong>" alguna vez con <strong>Soda Stereo</strong>, esta es un poco una concepción de una relación… <strong>—sí, al final yo siempre escribo de lo mismo, pero bueno… —</strong> en la cual estamos poseídos por algo que va más allá de nosotros. Y entonces pensaba en eso, ¿no? En que dentro nuestro también vive una cantidad de fantasmas que toman formas según las relaciones que tengamos, y cómo nos veamos con el otro. Y es un tema que tiene muchas partes, tiene bastante complejidad en relación a otros que son mucho más directos y… es una hermosa canción.</em>"</p>
+                    <img loading="lazy" src="images/ahi13.jpg" class="img-derecha" alt="Foto backstage de la banda en el videoclip Crimen. De izquierda a derecha: Richard Coleman, Fernando Nalé,Leandro Fresco, Gustavo Cerati y Fernando Samalea"/>
+                    <p>CERATI - CRIMEN: "<em>El dolor te impulsa rápidamente a tener que desembarazarte de él de alguna forma, y una de las que tenemos quienes nos dedicamos a lo artístico es a través de la obra que hacemos. Es cierto eso. Pero también agregaría que el desafío es hacerlo sin dolor, porque si no, es una tortura continua. Yo lo hice muchas veces, me autotorturé para conseguir una emoción, pero también es interesante escribir desde lo positivo, si uno está bien. Y en algún sentido puedo decir que yo no soy una persona tan autobiográfica como parece.</em>"</p>
+                    <img loading="lazy" src="images/ahi14.jpg" class="img-izquierda" alt="Gustavo Cerati preparandose para la filmación del videoclip Crimen y a su izquierda una asistente arreglandolo"/>
+                    <p>CERATI - CRIMEN: "<em>Es obvio que al final de cuentas uno escribe cosas que tienen que ver con uno, pero '<strong>Crimen</strong>', un tema que sonó mucho, del disco <strong>Ahí Vamos</strong>, es un tema de separación, de puñal, un tango: me dejó. Y lo estaba escribiendo en un momento de perfecta o muy buena armonía. Estaba bien y estaba con alguien, no digo en pareja, no tenía. Pero el recuerdo, las historias que se repiten, el deja vú está ahí, es cuestión de ubicarse un poco en esa situación. Será un poco artificial, pero eso es parte, para mí, de lo interesante de hacer canciones.</em>"</p>
+                    <p>Link al <a href="https://www.chilevision.cl/yo-el-que-no-conocias/videos/momentos/madre-de-cerati-y-el-crimen-de-gustavo-creo-que-deborah-fue-su-gran" target="_blank" class="link_madreCerati">Testimonio Lilian Clark</a> (Madre de Gustavo Adrián Cerati) en relación al tema "<em>Crimen</em>"</p>
+                </div>
+                <aside id="contenedor_ahi" class="contenedor-curiosidad">
+                    <div class="div-curiosidad">
+                        <button id="curiosidad_ahi" class="btn-curiosidad">CURIOSIDAD</button>
+                    </div>
+                    <div class="input-curiosidad">
+                        <div id="texto_ahi1" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad9.jpg" class="img-izquierda" alt="una imagen con tres fotos del globo aerostático. El mismo globo posee un logo que dice ahi vamos, gustavo cerati y nuevo album"/>
+                            <p>Buenos Aires, 3 de abril de 2006</p>
+                            <p>Un globo aerostático de "<strong>Ahí Vamos</strong>" sobrevolaba la ciudad de la furia promocionando su lanzamiento.</p>
+                            <p>Movida organizada por <strong>Sony Music</strong> junto a 10Musica el 3 de abril, un día antes del lanzamiento que al igual que la presentación a la prensa en Puerto Madero estaban pautado para el 4 de abril, no el 3.</p>
+                            <div class="salto-float"></div>
+                        </div>
+                        <div id="texto_ahi2" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad10.jpg" class="img-derecha" alt="Gustavo Cerati sentado en un sillón y en cada costado un parlante"/>
+                            <p>GUSTAVO CERATI | "Me Quedo Aquí" | El 20 de abril de 2008 realizaba la presentación a la prensa del videoclip de "<strong>Me quedo aquí</strong>", quinto y último corte de "<strong>Ahí Vamos</strong>", en Mute, Buenos Aires</p>
+                            <img loading="lazy" src="images/curiosidad11.jpg" class="img-izquierda" alt="Foto detras de camaras en el que se ve el escenario del videoclip me quedo aqui. Se encuentra Gustavo Cerati sentado en un sillon y en cada uno de sus costados un asistente con un parlante"/>
+                            <p>CERATI: "<em>Me encantó filmar este video, más que nada porque es el primero en toda mi carrera que grabo de una sola toma. También, me gustó porque tiene un concepto muy Warhol, con una cámara fija y sin tantos artilugios... Eran las cuatro y media de la mañana, estaban el sillón y los parlantes, entonces Oscar vino y me preguntó: ‘¿Hacemos un video?’ y le contesté ‘¡Dale!’… Además la canción se merecía ser corte del disco. Siempre me gustó pero, por distintas circunstancias, quedaba relegada… ¡Esta era su oportunidad!</em>"</p>
+                            <p>OSCAR FERNÁNDEZ "ROHO": "<em>Lo de hacerlo de una toma, surgió porque sentía que era algo que tenía que suceder en una situación muy simple. Me parecía que el clip tenía que representar a Gustavo cantando como si fuera en el living de tu casa… Las ideas simples muchas veces tienen un resultado genial. La idea de que al final todo florezca, tiene que ver con que, a pesar de todo, de que se viene el tsunami y está todo mal, es una imagen placentera… La estoy pasando bien: ¡<strong>Me quedo aquí</strong>!</em>"</p>
+                        </div>
+                        <div id="texto_ahi3" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad12.jpg" class="img-izquierda" alt="Foto detrás de camaras del director filmando la escena en que Gustavo Cerati camina en la calle y al costado un auto. Todo perteneciente al videoclip Crimen"/>
+                            <p>GUSTAVO CERATI | Rodaje de "Crimen" | El 10 de abril de 2006 comenzaba el rodaje del videoclip del primer corte del álbum "<strong>Ahí Vamos</strong>", bajo la dirección de Joaquín Cambre</p>
+                            <p>CERATI: "<em>La idea del video fue del director. La canción ya es de por sí una balada clásica, al estilo 'rompecorazones', así que para el video quería desacartonarla un poco para sacarle esa cuestión sufriente.</em>"</p>
+                            <img loading="lazy" src="images/curiosidad13.jpg" class="img-derecha" alt="Gustavo Cerati vestido de detective a la derecha de la imagen sobre el escritorio. A la izquierda un actor actuando en solicitar sus servicios"/>
+                            <p>CERATI: "<em>Joaquín dio en el clavo cuando trajo su idea: detective, década del cincuenta, policial negro... Yo ya venía pensando algo parecido, pero no lo había resuelto tan bien como él. Después me puse en sus manos. Realmente yo no me creo que sea un actor... En Crimen es una pequeña viñeta en la que más o menos si actuás mal, lo podés hacer varias veces: de todas maneras creo que me doy maña, y que es una parte que, en algún punto, uno le gustaría desarrollar y tiene que ver con lo que uno hace.</em>"</p>
+                            <img loading="lazy" src="images/curiosidad14.jpg" class="img-izquierda" alt="Foto detrás de camaras. El equipo de producción a la izquierda. Gustavo Cerati a la derecha"/>
+                            <p>CERATI: "<em>Me parece divertida la posibilidad de hacer otros personajes. '<strong>Beto</strong>' es el que habla al principio de este video, transformado en locutor. Ese es un texto que escribimos entre Joaquín y yo. A él se le ocurrió la idea de algo en off, me parece que estaba bueno para darle un poquito más de clima a la cosa. Y después escribimos entre los dos, un poco inspirados en '<strong>Simplemente Sangre</strong>' de los Cohen.</em>"</p>
+                            <div class="salto-float"></div>
+                            <img loading="lazy" src="images/curiosidad15.gif" class="img-derecha" alt="Exterior del Resto/Bar Kandi"/>
+                            <p>ESTRENO: El 9 de mayo se estrenaba en exclusiva en <strong>CERATI.COM</strong> y se realizaba la presentación a la prensa en el Resto/Bar Kandi de Buenos Aires, una de las locaciones de filmación, además de una vieja fábrica ubicada al sur de la provincia de <strong>Buenos Aires</strong>, y el 10 de mayo se estrenaba en <strong>MTV</strong>.</p>
+                        </div>
+                        <div class="contenedor-rango">
+                            <input type="range" value="1" min="1" max="3" autocomplete="off" step="1" list="ticks1" class="rango_defecto rango_ahi">
+                            <datalist id="ticks1" class="lista_defecto">
+                                <option id="op1" data-value="primero" class="opcion_defecto opcion_ahi">Opción 1</option>
+                                <option id="op2" data-value="segundo" class="opcion_defecto opcion_ahi">Opción 2</option>
+                                <option id="op3" data-value="tercero" class="opcion_defecto opcion_ahi">Opción 3</option>
+                            </datalist>
+                        </div>
+                    </div>
+                </aside>
+                <div class="contenedor-flecha">
+                    <button type="button" class="boton_arriba">
+                        <img class="flecha_arriba" src="images/SVG/flecha-arriba.svg" alt="flecha hacia arriba top">
+                    </button>
+                </div>
+            </article>
+            <article id="FUERZA_NATURAL" class="articulo_discos display_ninguno opacidad">
+                <div class="discografia">
+                    <div class="cerrar">
+                        <img class="logo-x" src="images/SVG/x-blanco.svg" onclick="cerrar()">
+                    </div>
+                    <h3>FUERZA NATURAL</h3>
+                    <img src="images/fuerza1.jpg" class="presentacion" alt="Imagen de publicidad de Fuerza Natural. El ojo de Gustavo Cerati con detalle en alrededor de su pupila de planetas y estrellas">
+                    <h4>FECHA DE LANZAMIENTO:  01/09/2009</h4>
+                    <p>Uno de los discos más esperados de Cerati y acaso uno de los más esperados dentro de esta curiosa entelequia llamada “<em><strong>Rock Nacional</strong></em>”. Editado en Septiembre de 2009 y tras el impactante regreso de <strong>Soda Stereo</strong> batiendo (cuándo no) records en toda Latinoamérica, <strong>Fuerza natural</strong> es el último disco de <strong>Gustavo Cerati</strong>.</p> 
+                    <img loading="lazy" src="images/fuerza2.jpg" class="img-derecha" alt="Gustavo Cerati en la calle. Usando anteojos de sol vino tinto, una remera negra y un abrigo de piel"/>
+                    <p>Era el regreso a su faceta solista, dos años después de la gira de reunión de <strong>Soda Stereo</strong>, y es un viaje sonoro… debo decirlo: al principio no lo entendí ¿Esto después del vértigo “<strong>Ahí vamos / Me verás volver</strong>“? Y sí… luego de un año con un Cerati repartido entre Italia y Uruguay tenía que salir algo medio Traveller (de viajero, sí. Y de Wilbury también).</p>
+                    <p>CERATI: "<em>Después de lo que hicimos con <strong>Soda Stereo</strong> en el exterior en 2007, me tomé un tiempo de tranquilidad, qué se yo, plantar árboles, hacer otra cosa que no tuviera nada que ver con la música. Sabía que iba a volver a hacer un disco, pero esa recarga a partir de todo ese tiempo de ocio es como volver a empezar, te produce sensaciones frescas. Yo creo que este disco, <strong>Fuerza natural</strong>, es producto del deseo real, y me propuse, la verdad, ampliar todo lo posible mis limitaciones, que son claras y que las veo, los lugares comunes, tratar de salir un poco de la mirada que habitualmente tengo. Al final, en todo eso se ve un espacio de más libertad, pero también creo que de alguna forma hice un compendio de muchas cosas que dije o esbocé en otros discos y acá están, quizá, más plasmadas.</em>"</p>
+                    <img loading="lazy" src="images/fuerza3.jpg" class="img-izquierda" alt="Gustavo Cerati recibiendo el premio de disco de oro por el album Fuerza Natural"/>
+                    <p>El álbum, que inició con ventas superiores a las 20 mil unidades en su primera semana, lo que le valió a Cerati “<strong>certificado de oro</strong>”, fue un interesante trabajo en el que colaboraron su hijo Benito, Richard Coleman, Adrián Paoletti y Anita Álvarez de Toledo en los coros.</p>
+                    <img loading="lazy" src="images/fuerza4.jpg" class="img-derecha" alt="A la izquierda una reportera y la derecha Gustavo Cerati respondiendo"/>
+                    <p>CERATI: "<em>¿Se supone que yo tendría que hacer un disco como el que hice anteriormente porque fue exitoso? Bueno, no. Se supone mal. En realidad vengo siendo exitoso haciendo todo lo contrario.</em>"</p>
+                    <p>CERATI: "<em><strong>Fuerza natural</strong> es un disco con mucha más libertad que cualquier otro: libertad estilística, libertad de letras. Es luminoso y quería que fuera así, por más que por momentos haya, como dice en una parte, 'chispas de oscuridad', situaciones con la naturaleza que también son especies de amenazas latentes, el disfrute con la música de la naturaleza, con lo que tenía a mi alrededor: tormentas tremendas, momentos increíbles de paz, viajes internos, personales.</em>"</p>
+                    <img loading="lazy" src="images/fuerza5.jpg" class="img-derecha" alt="Fernando Samalea tocando la bateria y Fernando Nalé tocando el bajo"/>
+                    <p>En casi una hora de música Cerati nos embarcaba en un viaje de tonalidades folk/rock junto a la guitarra de Gonzalo Córdoba, el piano de Leandro Fresco, el bajo de Fernando Nalé y Fernando Samalea en la batería.</p>
+                    <p>El álbum, editado en los formatos de CD, vinilo y él para entonces nuevo formato de alta calidad digital conocido como MusicPass, se convirtió en el de mayor ventas en la tienda iTunes latina.</p>
+                    <img loading="lazy" src="images/fuerza6.jpg" class="img-izquierda" alt="Gustavo Cerati dirigiendo su mirada a la derecha. De fondo un paisaje opacado por la niebla"/>
+                    <p>CERATI: "<em>Si yo me retirará ahora, en este momento... no creo que sea muy factible pero supongamos que sí, me iría contento. Por <strong>Fuerza Natural</strong>.</em>"</p>
+                    <p>CERATI: "<em>Me siento empezando de vuelta cada vez que hago algo. Necesito también romper un poco con las formas que uno mismo se genera. Hacés un disco y las cosas van para un lado y tratan de tener un concepto, pero después querés hacer algo diferente. Necesito explorar dentro de mis límites o fuera de ellos. Creo que somos todos muy limitados y necesitamos sorprendernos. Si hago borrón y cuenta nueva, es más probable que llegue a algún puerto o por lo menos a un lugar diferente.</em>"</p>
+                    <img loading="lazy" src="images/fuerza7.png" class="img-derecha" alt="Gustavo Cerati con un poncho marron desplegandolo en toda su extensión"/>
+                    <p>CERATI: "<em>Y la gente me acompaña en gran parte porque le gusta esa situación de renovar la piel con cada disco. Me parece que siempre necesita una digestión, eso para muchos que me siguen. Sólo pienso en que necesito cambiar un poco las reglas de juego para desde la composición y las letras decir algo nuevo.</em>"</p>
+                    <div class="salto-float"></div>
+                    <img loading="lazy" src="images/fuerza8.jpg" class="img-izquierda" alt="Gustavo Cerati en el centro de la imagen. De fondo arboles a su alrededor"/>
+                    <p>CERATI: "<em>Mis letras no suelen hacer referencia a nada. Yo creo que la canción es artificio. No sólo lo creo, sino que defiendo a muerte esa idea estética. Ok, si un psicólogo pone la lupa seguro salen cosas. Es más: leí libros de psicología y te puedo asegurar que tengo todas las patologías. En mayor o menor medidas, todas. Pero eso es otra cosa. Para mí ser artista es una actuación, es mentir, es jugar a la fantasía. Hay gente que necesita jugar al noticiero, todo bien. Yo no: entre Aristóteles y Platón, me quedo con Platón.</em>"</p>
+                    <img loading="lazy" src="images/fuerza9.jpg" class="img-derecha" alt="Foto grupal de izquierda a derecha: Gustavo Cerati, Leandro Fresco, Fernando Nalé, Gonzalo Córdoba y Richard Coleman"/>
+                    <p>CERATI - FUERZA NATURAL: "<em>Quería hacer un álbum que fuese un encadenamiento temático: Fuerza Natural aparece todo el tiempo, no hay solo un deja vu, hay deja vues por todo el disco. Quería eso: quería más apuntar a una cuestión de obra que a una cuestión de canciones que, de por sí, funcionan. No es que sea un disco conceptual tan de entrada. Pero de alguna forma en la medida en que fui haciendo las canciones me di cuenta de que todas estaban, de alguna manera, representando una especie de trayecto en relación a las fuerzas de la naturaleza con las cuales tenía mucho contacto en el momento de escribirlas y como fueron hechas todas en un período bastante corto y prácticamente eché muy poca mano a cosas que tenía de antemano, entonces se unieron naturalmente. Hay algo de personaje en los discos, en las mismas canciones, en todo el concepto general hay un personaje que aflora, con sus particularidades diferentes a otros que hice, dentro de lo que yo soy.</em>"</p>                   
+                    <img loading="lazy" src="images/fuerza10.jpg" class="img-izquierda" alt="A la izquierda la actriz del videoclip Dejavu y su derecha Gustavo Cerati con la camisa rota en la espalda"/>
+                    <p>CERATI - DEJÁ VU: "<em>Sacar belleza de este caos es virtud ¿O no?... La belleza es algo fundamental. No necesariamente frívolo. Se expresa en una cuestión visual. Cuando uno piensa en belleza es lógico que sea así. Belleza... la verdadera belleza está en la naturaleza y somos parte de ella. Cuando expresamos esa belleza natural es cuando más nos emocionamos, y hacer canciones es una forma de acercarme a ella. Yo intento hacer canciones que tengan que ver con la belleza.</em>"</p>
+                    <img loading="lazy" src="images/fuerza11.jpg" class="img-derecha" alt="Foto del frente del interior del auto en que aparece Gustavo Cerati con sus manos en el volante"/>
+                    <p>CERATI - DEJÁ VU: "<em>¿Por qué la poesía es la única verdad?... Porque cuanto más viejo me pongo, más siento que es importante esa realidad diferente, esa necesidad platónica de ver otras formas. Quizás sea porque hay tanto reality, y no reniego de ellos, pero hay tantos y los vemos todo el tiempo que necesito más fantasía, y la poesía es eso: de la musicalidad en las palabras, creo que eso dice mucho más que un noticiero. Aparte la poesía está viva. Todo el tiempo hay gente viviendo cosas fantásticas. Yo no pretendo ser un poeta, sólo estoy incitando a la poesía como una verdad para que no creamos que porque nos ponemos metafóricos somos menos realistas.</em>"</p>
+                    <img loading="lazy" src="images/fuerza12.jpg" class="img-derecha" alt="Gustavo Cerati con una vara de metal y atras de él una estrella de fuego"/>
+                    <p>CERATI - MAGIA: "<em>Me parece que las canciones comenzaron a caminar solas y se acercaron a ciertos lugares que tenían que ver con lo que estaba escuchando. En realidad, es una interacción entre lo que uno escucha en ese momento, a lo que uno quisiera acercarse y lo que uno está componiendo. Me daba cuenta de que algunas cosas tenían cierta similitud con los discos que escuchaba. No estaba escuchando necesariamente Electric Light Orchestra, pero de golpe me encontré con que '<strong>Magia</strong>' andaba por ahí, entonces iba a escuchar eso para ver qué pasaba.</em>"</p>
+                    <img loading="lazy" src="images/fuerza13.jpg" class="img-izquierda" alt="Gustavo Cerati mirando al horizonte rodeando de cactus"/>
+                    <p>CERATI - CACTUS: "<em>En casi todos los discos hice algún tipo de mixtura con el folclore. Lo que siempre me gustó mucho fue la música del norte de Argentina y quizás todo eso empezó con '<strong>El temblor</strong>', ¿no? En la época de '<strong>Nada Personal</strong>' había ya como cierta fascinación mía por mezclar eso. No siempre ocurre que funcione. Yo creo que <strong>Cactus</strong> me salió como una canción 'joya' en ese aspecto, como que siento que ahí se mezclan de una forma todavía más natural que en otros casos, pero se entronca con esos temas que tienen algo telúrico.</em>"</p>
+                    <img loading="lazy" src="images/fuerza14.jpg" class="img-derecha" alt="Gustavo Cerati caminando a la distancia rodeado de cactus"/>
+                    <p>CERATI - CACTUS: "<em>Se deriva de una experiencia que tuve en el desierto mexicano. De todas maneras no es una descripción de eso tampoco. Pero recuerdo una experiencia con los indígenas ahí, los chamanes, que me dijeron: 'Bueno, al principio no vas a ver ninguno de estos cactus que estamos buscando, vas a caminar y no vas a encontrar nada y de golpe va a aparecer uno: ese dejalo'. ¡Ok! Todas instrucciones de gente que sabe, ¿no? Uno se encomienda a esos viajes con gente que sabe, si no más vale no hacerlos. Y después me dijeron: 'Cuando veas uno, vas a ver todos' y es exactamente lo que me ocurrió. Y de ahí se derivó la frase, no la canción en sí.</em>"</p>
+                    <img loading="lazy" src="images/fuerza15.jpg" class="img-izquierda" alt="Foto de costado de Gustavo Cerati mirando al horizonte"/>
+                    <p>CERATI - CACTUS: "<em>La canción es como cierta contemplación del tiempo que como humanos nos es un poco imposible: un médano se transforma en un témpano, para eso hace millones y millones de años, y el Universo maneja esas escalas y nosotros miramos el cielo y vemos, no sé... cosas que ya ocurrieron hace millones y millones de años. Estamos viviendo un tiempo que nos es absurdo, pero al mismo tiempo es real: va a ocurrir.</em>"</p>
+                    <img loading="lazy" src="images/fuerza16.jpg" class="img-derecha" alt="imagen con simbolos de diversas religiones: Hay elementos del Judaísmo como la Estrella de David que se puede ver en la parte inferior derecha. También hay simbología de la Kabbalah, esta es una rama de la religión judía que interpreta de forma mística y alegórica la Torá. Por otro lado, la Luna Creciente y la Estrella pertenecen al Islam, esta se observa en el sector izquierdo inferior. Hay otro “símbolo pagano” como la estrella en el centro que tiene cinco puntas, esta representa la magia."/>
+                    <p>CERATI - #: "<em>Al escribir la letra de este tema me basé en cierta psicodelia infantil, o en lo infantil que se transforma en psicodelia. En lo relacionado con la numerología, con los números mágicos, me puse a contar y sin haberlo imaginado antes, llego hasta el 13 y vuelvo a comenzar en 13. Es como una especie de maldición maya. Así que se puede ver como el fin del viaje que realizo en mi disco, pero la verdad no era mi intención. Esta canción es como un viaje astral. No se sabe si se está dormido o despierto; si es un segundo o 100 años, no hay tiempo ni espacio.</em>"</p>
+                </div>
+                <aside id="contenedor_fuerza" class="contenedor-curiosidad">
+                    <div class="div-curiosidad">
+                        <button id="curiosidad_fuerza" class="btn-curiosidad">CURIOSIDAD</button>
+                    </div>
+                    <div class="input-curiosidad">
+                        <div id="texto_fuerza1" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad16.jpg" class="img-derecha" alt="El equipo detras de camaras junto con Gustavo Cerati en la filmación del videoclip Rapto"/>
+                            <p>ANDY FOGWILL (Director Videoclips Déjà-Vu y Rapto): "<em>La idea que teníamos era hacer como una especie de ‘<strong>film clip</strong>’, en donde todas las canciones se iban uniendo una tras otra. Una peliculita que unía todos los videos a través de un viaje , un auto, él como ‘<strong>actor</strong>’ y una caja ‘<strong>mágica</strong>’ que a la manera de un ‘<strong>MacGuffin hitchcockiano</strong>’ iba a generar una intriga en todos los videos que se iba a ir revelando a través de los clips. Mientras filmábamos ‘<strong>Deja Vu</strong>’ hicimos algunas escenas nocturnas para el video de ‘<strong>Magia</strong>’, que íbamos a filmar después en Buenos Aires. Antes del clip ‘<strong>Rapto</strong>’ faltaban unas imágenes donde íbamos a contar el momento del rapto y una persecución entre un auto y una moto. Después de tantos años, me pregunto qué había realmente en aquella misteriosa caja. Misteriosamente, puedo decir que están los videos inconclusos de ‘<strong>Magia</strong>’ y ‘<strong>Cactus</strong>’.</em>"</p>
+                        </div>
+                        <div id="texto_fuerza2" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad17.jpg" class="img-derecha" alt="Varias fotos. La foto de portada del disco de Fuerza Natural. Tres fotos sacados en el techo del edificio La Défense que inspiraron para el fondo de la portada del disco Fuerza Natural"/>
+                            <p>La foto de portada del álbum es una vista de la moderna zona de negocios "<strong>La Défense</strong>" en París, Francia. Fue tomada por Germán Saez en 2005 desde la terraza del "<strong>Grande Arche de la Défense</strong>". En abril de 2010 esa terraza fue cerrada por razones de seguridad y recién reabierta en 2017.</p>
+                            <p>CERATI: "<em>Esta tapa fue creada como para vinilo, después se reduce al tamaño del CD. Quería que fuera un poco shokeante. La idea era hacer un cierto tributo a las tapas de tipo '<strong>Hipgnosis</strong>', de la época de las tapas del rock. Poner un elemento discordante o movilizador en un supuesto contexto real. El personaje salió de la idea de la canción que habla de la ruta del jinete enmascarado. ¿Qué íbamos a hacer? ¿Un zorro flotando sobre la ciudad? Estaba bueno el triunfo de algo a sangre como un caballo arriba de una ciudad genérica, como en la que se viene una tormenta... Entonces me dije: 'A ver, montemos un superhéroe arriba de ese caballo' ¡pero no podía ser el Zorro! Así que talibanizamos un poquito la situación. No hay una explicación pero sí quería hacer algo que te movilizara, imaginando '<strong>Wish you Were Here</strong>', donde había un tipo prendido fuego.</em>"</p>
+                            <img loading="lazy" src="images/curiosidad18.jfif" class="img-izquierda" alt="Captura de la historia del instagram de Lisa Cerati. Foto de la vista que se ve desde el techo de la Grand Arche de La Défense"/>
+                            <p>"<em>Su hija Lisa y Fernando Samalea en 2017 y Germán Saez en 2012, compartieron su paso por el <strong>Grand Arche de La Défense</strong>, en París, haciendo un guiño simbólico a la portada de <strong>Fuerza Natural</strong> tomando una foto cada uno desde el mismo lugar desde donde, en 2005, Germán Saez tomó la foto original que en 2009 terminaría ilustrando la portada del último disco de Cerati.</em>"</p>
+                            <p>LISA CERATI: "<em>¡¡¡Que increíble!!! estoy en el exacto mismo punto donde se sacó la foto de tapa de FN!.</em>"</p>
+                            <img loading="lazy" src="images/curiosidad19.jfif" class="img-derecha" alt="Foto Fernando Samalea posando con fondo de la ciudad de Paris"/>
+                            <p>FERNANDO SAMALEA - Paris, agosto de 2017: "<em>Como en un sueño, parado ante la imagen que Gustavo había escogido en 2009 para acompañar visualmente a las canciones de '<strong>Fuerza natural</strong>'. Tras bajar por los elevadores de vidrio desde el <strong>Grande Arche de La Défense</strong>, caminamos entre esos edificios de arquitectura futurista, por el trazo de cemento alineado con el <strong>Arc de Triomphe, les Champs-Elysées</strong> y la <strong>Place de la Concorde</strong>. Así le hicimos nuestro guiño simbólico a ese thriller musical a cielo abierto de carácter folk, que él había compuesto en parte inspirado por discos que le habían traído sus hijos Benito y Lisa desde Texas. El jinete enmascarado ya cobró vuelo. No hubo más que mirar al cielo y sonreír.</em>"</p>
+                            <img loading="lazy" src="images/curiosidad20.jpg" class="img-izquierda" alt="Foto sacada en la base del edificio Grande Arche de la Défense. En el centro una mano sosteniendo un celular reproduciendo el disco Fuerza Natural. El fondo desenfocado de las calles"/>
+                            <p>GERMÁN SAEZ: "<em>Esta otra foto la tomé en 2012 pero desde la base del '<strong>Grande Arche de la Défense</strong>' en París y con el cambio de perspectiva obvio por la diferencia de altura. Al estar cerrada desde 2010 la terraza del Arco no pude volver a subir y tomar otra foto desde allí como la del disco.</em>"</p>
+                        </div>
+                        <div id="texto_fuerza3" class ="texto-curiosidad">
+                            <img loading="lazy" src="images/curiosidad22.jpg" class="img-izquierda" alt="Gustavo Cerati tocando en vivo con su guitarra de doble mástil Mosrite Double-Neck"/>
+                            <p>En abril de 2010, en <strong>Guitar Center</strong> de <strong>Los Angeles</strong>, Gustavo compra la que terminaría siendo su última guitarra, una Mosrite Double-Neck (doble mástil), que solo pudo usar en los últimos 5 conciertos de la gira <strong>Fuerza Natural</strong>, los que lamentablemente terminaron siendo además los últimos 5 de su vida.</p>
+                            <img loading="lazy" src="images/curiosidad21.jpg" class="img-derecha" alt="Gustavo Cerati tocando en vivo con su guitarra de doble mástil Mosrite Double-Neck"/>
+                            <p>ADRIÁN TAVERNA: "<em>El último día en <strong>Los Angeles</strong>, Gus se compró una guitarra con doble diapasón, una edición limitada de diez ejemplares, que le enviaron días después. Ninguna de las canciones del setlist que estaba haciendo (una primera parte en la que tocaba el disco nuevo entero y una segunda parte con un random de sus canciones solistas) lo convencía demasiado para usarla, así que aprovechó para incluir '<strong>Trátame Suavemente</strong>' de '<strong>Soda Stereo</strong>'".</em></p>                        
+                            <p>La estrena el 4 de Mayo de 2010 en Acapulco, México: "<em>Señoras y señores les quiero presentar..., me la compré ahora, veía doble, pensé que eran cuatro pero resulta que son dos. Todo esto para tocar un tema muy simple. Esto lo tocamos muy pocas veces, así que no sé como saldrá", de esta manera Cerati la presentaba en sociedad, para lo cual agregó al setlist '<strong>Trátame Suavemente</strong>', tocando así con la de 12 cuerdas el arpegio, y con la de 6 la parte rockera, que repite luego de igual manera en <strong>Miami, Medellín, Bogotá y Caracas</strong>.</em></p>
+                        </div>
+                        <div class="contenedor-rango">
+                            <input type="range" value="1" min="1" max="3" autocomplete="off" step="1" list="ticks1" class="rango_defecto rango_fuerza">
+                            <datalist id="ticks1" class="lista_defecto">
+                                <option id="op1" data-value="primero" class="opcion_defecto opcion_fuerza">Opción 1</option>
+                                <option id="op2" data-value="segundo" class="opcion_defecto opcion_fuerza">Opción 2</option>
+                                <option id="op3" data-value="tercero" class="opcion_defecto opcion_fuerza">Opción 3</option>
+                            </datalist>
+                        </div>
+                    </div>
+                </aside>
+                <div class="contenedor-flecha">
+                    <button type="button" class="boton_arriba">
+                        <img class="flecha_arriba" src="images/SVG/flecha-arriba.svg" alt="flecha hacia arriba top">
+                    </button>
+                </div>
+            </article>
+        </div>
+        <!-- Scripts -->
+        <script src="assets/js/particles.min.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
