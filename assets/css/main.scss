@@ -1,0 +1,1288 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+    margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+    display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+    background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b, strong {
+    font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code, kbd, samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+    font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+    border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button, input, optgroup, select, textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button, input { /* 1 */
+    overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button, select { /* 1 */
+    text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,[type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
+    display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+
+template {
+    display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+    display: none;
+}
+//COLORES
+$negro: #000000;
+$blanco: #ffffff;
+$grisOscuro: #222222;
+$grisClaro: #C8C8C8;
+$grisClaroHover: #ACABAB;
+//AMOR AMARILLO
+$amorprimario: #f0d501;
+$amorsecundario: #fda803;
+//BOCANADA
+$bocanadaprimario: #28256c;
+$bocanadasecundario: #1ab0e3;
+//SIEMPE ES HOY
+$siempreprimario: #ff0000;
+//AHI VAMOS
+$ahiprimario: #808080;
+//FUERZA NATURAL
+$fuerzaprimario: #694575;
+$fuerzasecundario: #56682e;
+$fuerzaterciario: #164e71;
+$fuerzacuarto: #f2af23;
+$fuerzaquinto: #9d2c24;
+$sombraDark: 10px 10px 20px rgba(170,170,170,.16);
+$HoverBlanco: rgba(255, 255, 255, 0.075);
+
+html {
+    font-size: 14pt;
+    scroll-behavior: smooth; /*velocidad de transición*/
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: $negro;
+    /*background-image: url(img/fondo.gif); Como es seleccionando la clase*/
+    background-image: 
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    // background-attachment: fixed;
+    color: $blanco;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+
+@keyframes drop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    80% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        top: 6.94em
+    }
+}
+
+#cargando_pagina {
+    transition: opacity 0.325s ease-in-out;
+    &.display_ninguno {
+        display: none;
+    }
+    #particles-js {
+        height: 100vh;
+        width: 100%;
+        position: fixed; /*quede fijo en pantalla */
+        z-index: 1;
+    }
+    #contenedor_precarga {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        .satelite_cerati {
+            height: 20rem;
+            transform: rotate(-23deg);
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', Arial, Helvetica;
+            font-weight: 100;
+            font-size: 0.9em;
+            color: #a3e1f0;
+            span {
+                position: relative;
+                top: 0.63em;  
+                display: inline-block;
+                text-transform: uppercase;  
+                opacity: 0;
+                transform: rotateX(-90deg);
+            }
+            
+            .let1 {
+                animation: drop 1.2s ease-in-out infinite;
+                animation-delay: 1.2s;
+            }
+            
+            .let2 {
+                animation: drop 1.2s ease-in-out infinite;
+                animation-delay: 1.3s;
+            }
+            
+            .let3 {
+                animation: drop 1.2s ease-in-out infinite;
+                animation-delay: 1.4s;
+            }
+            
+            .let4 {
+                animation: drop 1.2s ease-in-out infinite;
+                animation-delay: 1.5s;
+            
+            }
+            
+            .let5 {
+                animation: drop 1.2s ease-in-out infinite;
+                animation-delay: 1.6s;
+            }
+            
+            .let6 {
+                animation: drop 1.2s ease-in-out infinite;
+                animation-delay: 1.7s;
+            }
+            
+            .let7 {
+                animation: drop 1.2s ease-in-out infinite;
+                animation-delay: 1.8s;
+            }
+            
+            .let8 {
+                animation: drop 1.2s ease-in-out infinite;
+                animation-delay: 1.9s;
+            }
+        }
+    }
+}
+
+.precarga {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+    #encabezado {
+        -moz-filter: blur(0.125rem);
+        -webkit-filter: blur(0.125rem);
+        -ms-filter: blur(0.125rem);
+        filter: blur(0.125rem);
+        & > * {
+            opacity: 0;
+        }
+        .contenedor1 .contenedor2 {
+            max-height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            opacity: 0;
+        }
+    }
+}
+
+div {
+    border: 0;
+}
+
+#encabezado {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+    -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+    transition: opacity 0.325s ease-in-out;
+	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+	background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+	background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+	background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+	max-width: 100%;
+    text-align: center;
+    & > * {
+        -moz-transition: opacity 0.325s ease-in-out;
+        -webkit-transition: opacity 0.325s ease-in-out;
+        -ms-transition: opacity 0.325s ease-in-out;
+        transition: opacity 0.325s ease-in-out;
+        position: relative;
+        margin-top: 3.5rem;
+    }
+    & > *:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: calc(-3.5rem - 1px);
+            left: calc(50% - 1px);
+            width: 1px;
+            height: calc(3.5rem + 1px);
+            background: $blanco;
+    }
+    &.display_ninguno {
+        display: none;
+    }
+    .logo-cerati {
+        background-color: $blanco;
+        width: 5.5rem;
+        border-radius: 50%;
+        border: 1px solid $blanco;
+    }
+    .contenedor1 {
+        border-style: solid;
+        border-color: $blanco;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        max-width: 100%;
+        .contenedor2 {
+            -moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+            -webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+            -ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+            transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+            -moz-transition-delay: 0.25s;
+            -webkit-transition-delay: 0.25s;
+            -ms-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+            padding: 3rem 2rem;
+            max-height: 40rem;
+            overflow: hidden;
+            h1 {
+                font-size: 2.25rem;
+                line-height: 1.3;
+                letter-spacing: 0.5rem;
+                color: $blanco;
+                font-weight: 600;
+                margin: 0 0 1rem 0;
+                text-transform: uppercase;
+            }
+            p {
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                font-size: 0.8rem;
+                line-height: 2;
+                margin: 0;
+            }
+        }
+    }
+    nav {
+        display: block;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        ul {
+			display: flex;
+			margin: 0;
+			list-style: none;
+			padding-left: 0;
+			border: solid 1px #ffffff;
+			border-radius: 4px;
+            li {
+                padding-left: 0;
+				border-left: solid 1px #ffffff;
+                &:first-child {
+					border-left: 0;
+				}
+                a {
+                    display: block;
+					min-width: 7.5rem;
+					height: 2.75rem;
+					line-height: 2.75rem;
+					padding: 0 1.25rem 0 1.45rem;
+					text-transform: uppercase;
+					letter-spacing: 0.2rem;
+					font-size: 0.8rem;
+					border-bottom: 0;
+                    -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+                    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+                    -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+                    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+                    border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+                    text-decoration: none;
+                    color: inherit;
+                    &:hover {
+                        background-color: $HoverBlanco;
+                    }
+                    &:active {
+                        background-color: rgba(255, 255, 255, 0.175);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#articulos {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    position: relative;
+    padding: 3rem 2rem;
+    z-index: 3;
+    transition: opacity 0.325s ease-in-out;
+    &.display_ninguno {
+        display: none;
+    }
+    .articulo_discos {
+        box-sizing: border-box;
+        transition: opacity 0.325s ease-in-out;
+        padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+        position: relative;
+        width: 50rem;
+        max-width: 100%;
+        background-color: rgba(27, 31, 34, 0.85);
+        border-radius: 4px;
+        &.display_ninguno {
+            display: none;
+        }
+        .discografia {
+            color: $blanco;
+            .cerrar {
+                display: flex;
+                justify-content: end;
+                .logo-x {
+                    width: 1rem;
+                    padding: 0.5rem;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $HoverBlanco;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            h3 {
+                border-bottom: solid 1px $blanco;
+                width: -webkit-max-content;
+                width: -ms-max-content;
+                width: max-content;
+                padding-bottom: 0.5rem;
+            }
+            .presentacion {
+                width: 100%;
+                border-radius: 4px;
+            }
+            p {
+                font-size: 0.9rem;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.img-izquierda {
+    height: 13rem;
+    float: left;
+    margin-right: 1rem;
+    display: block;
+    border-radius: 4px;
+}
+
+.img-derecha {
+    height: 13rem;
+    float: right;
+    margin-left: 1rem;
+    display: block;
+    border-radius: 4px;
+}
+
+.salto-float {
+    clear: both;
+    height: 0.9rem;
+}
+
+.opacidad {
+    opacity: 0;
+    &.visible {
+        opacity: 1;
+    }
+}
+
+.link_madreCerati {
+    font-size: 0.9rem;
+}
+
+// BOTONES CURIOSIDAD
+#articulos {
+    .articulo_discos {
+        .contenedor-curiosidad {
+            width: 100%;
+            display: flow-root;
+            .div-curiosidad {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .btn-curiosidad{
+                    font-family: 'Raleway', Arial, Helvetica;
+                    font-size: 1rem;
+                    font-weight: bolder;
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    text-align: center;
+                    
+                    border-radius: 5px;
+                    box-shadow: 3px 3px 3px #999;
+                    transition-property: transform;
+                    transition-duration: all 0.2s;
+                    transition-timing-function: ease;
+                    &:active {
+                        text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+                        transform: translateY(4px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// DEGRADADO BOTON AMARILLO
+#curiosidad_amor {
+    background: $amorprimario;
+    background: linear-gradient(180deg, $amorprimario 40%, $amorsecundario 100%);
+    border-bottom: 3px solid $amorprimario;
+    &:active {
+        box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px $amorsecundario;
+        border-bottom: 1px solid $amorsecundario;
+    }
+}
+
+// DEGRADADO BOTON BOCANADA
+#curiosidad_bocanada {
+    background: $bocanadasecundario;
+    background: radial-gradient(circle, $bocanadasecundario 40%, $bocanadaprimario 100%);        
+    border-bottom: 3px solid $bocanadaprimario;
+    &:active {
+        box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px $bocanadasecundario;
+        border-bottom: 1px solid $bocanadasecundario;
+    }
+}
+
+// DEGRADADO BOTON SIEMPRE ES HOY
+#curiosidad_siempre {
+    background: $siempreprimario;
+    background: linear-gradient(180deg, $blanco 40%, $siempreprimario 100%);
+    border-bottom: 3px solid $siempreprimario;
+    &:active {
+        box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px $siempreprimario;
+        border-bottom: 1px solid $siempreprimario;
+    }
+}
+// DEGRADADO BOTON AHI VAMOS
+#curiosidad_ahi {
+    background: $ahiprimario;
+    background: radial-gradient(circle, $ahiprimario 0%, $blanco 20%, $ahiprimario 40%, $blanco 60%, $ahiprimario 80%, $blanco 100%);
+    border-bottom: 3px solid $ahiprimario;
+    &:active {
+        box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px $ahiprimario;
+        border-bottom: 1px solid $ahiprimario;
+    }
+}
+// DEGRADADO BOTON FUERZA NATURAL
+#curiosidad_fuerza {
+    background: $fuerzaquinto;
+    background: radial-gradient(circle, $fuerzaquinto 0%, $fuerzacuarto 25%, $fuerzaterciario 50%, $fuerzasecundario 75%, $fuerzaprimario 100%);
+    border-bottom: 3px solid $fuerzaprimario;
+    &:active {
+        box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px $fuerzaprimario;
+        border-bottom: 1px solid $fuerzaprimario;
+    }
+}
+
+// DESPLEGANDO U OCULTANDO LAS CURIOSIDADES
+.input-curiosidad {
+    display: none;
+    &.active {
+        display: block;
+    }
+    .contenedor-rango {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.texto-curiosidad {
+    opacity: 0;
+    transition: opacity 5s ease;
+    transform: scale(0);
+    transition: transform 1s ease;
+    height: 0;
+    img, p {
+        opacity: 0;
+        transition: opacity 5s ease;
+        transform: scale(0);
+        transition: transform 1s ease;
+        height: 0;
+    }
+    p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+    &.active {
+        opacity: 1;
+        transform: scale(1);
+        height: 100%;
+        img, p {
+            opacity: 1;
+            transform: scale(1);
+        }
+        p {
+            height: 100%;
+        }
+        img {
+            height: 13rem;
+        }
+    }
+}
+
+// EDITANDO VARIOS RANGOS
+.contenedor-rango {
+    display: none;
+    &.active {
+        display: block;
+    }
+    .rango_defecto {
+        width: 96%;
+        margin: 1rem;
+        background-color: transparent;
+        cursor: pointer;
+        display: initial;
+        //En los navegadores de tipo webkit ( Google Chrome, Opera, etc.) anulamos los estilos con los cuales las barras de desplazamiento vienen de fabrica.
+        -webkit-appearance: none;
+        &::-webkit-slider-runnable-track, &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+        }
+        //THUMB: Para dar estilo al "thumb" ( el botón o el control de la barra de desplazamiento ) utilizamos estas reglas de estilo: ( En los navegadores de tipo webkit necesitamos dar un margin-top negativo, por ejemplo margin-top: -9px. )
+        &::-webkit-slider-thumb{
+            margin-top: -1rem;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+        }
+        &::-moz-range-thumb{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+        }
+        &::-ms-thumb{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+        }
+        //TRACK: Para dar estilo al "track" o la barra de desplazamiento utilizamos estas otras reglas de estilo:
+        &::-webkit-slider-runnable-track{
+            height: 3px;
+        }
+        &::-moz-range-track{
+            height: 3px;
+        }
+        &::-ms-track{
+            height: 3px;
+        }
+        //En los navegadores de tipo webkit los input enfocados ( on focus ) tienen una sombra azulada. Para que esta sombra no aparezca, utilizamos estas reglas CSS:
+        &:focus {outline : none;}
+        &:focus::-webkit-slider-runnable-track{outline: none;}
+        //Para dar estilos diferentes a las varias partes del "track" el Internet Explorer nos lo pone muy fácil: Para la parte inferior ( lower ), antes del botón:
+        &::-ms-fill-lower{
+            background-color: $blanco;
+        }
+        //Para la parte superior ( upper ) después del botón:
+        &::-ms-fill-upper{
+            background-color: $negro;
+        }
+    }
+    .rango_bocanada {
+        &::-webkit-slider-thumb{
+            background-color: $bocanadasecundario;
+            border: 3px solid $bocanadaprimario;
+        }
+        &::-moz-range-thumb{
+            background-color: $bocanadasecundario;
+            border: 3px solid $bocanadaprimario;
+        }
+        &::-ms-thumb{
+            background-color: $bocanadasecundario;
+            border: 3px solid $bocanadaprimario;
+        }
+        &::-webkit-slider-runnable-track{
+            background-color: $bocanadaprimario;
+        }
+        &::-moz-range-track{
+            background-color: $bocanadaprimario;
+        }
+        &::-ms-track{
+            background-color: $bocanadaprimario;
+        }
+    }
+    .rango_siempre {
+        &::-webkit-slider-thumb{
+            background-color: $blanco;
+            border: 3px solid $siempreprimario;
+        }
+        &::-moz-range-thumb{
+            background-color: $blanco;
+            border: 3px solid $siempreprimario;
+        }
+        &::-ms-thumb{
+            background-color: $blanco;
+            border: 3px solid $siempreprimario;
+        }
+        &::-webkit-slider-runnable-track{
+            background-color: $siempreprimario;
+        }
+        &::-moz-range-track{
+            background-color: $siempreprimario;
+        }
+        &::-ms-track{
+            background-color: $siempreprimario;
+        }
+    }
+    .rango_ahi {
+        &::-webkit-slider-thumb{
+            background-color: $blanco;
+            border: 3px solid $ahiprimario;
+        }
+        &::-moz-range-thumb{
+            background-color: $blanco;
+            border: 3px solid $ahiprimario;
+        }
+        &::-ms-thumb{
+            background-color: $blanco;
+            border: 3px solid $ahiprimario;
+        }
+        &::-webkit-slider-runnable-track{
+            background-color: $ahiprimario;
+        }
+        &::-moz-range-track{
+            background-color: $ahiprimario;
+        }
+        &::-ms-track{
+            background-color: $ahiprimario;
+        }
+    }
+    .rango_fuerza {
+        &::-webkit-slider-thumb{
+            background-color: $fuerzasecundario;
+            border: 3px solid $fuerzaprimario;
+        }
+        &::-moz-range-thumb{
+            background-color: $fuerzasecundario;
+            border: 3px solid $fuerzaprimario;
+        }
+        &::-ms-thumb{
+            background-color: $fuerzasecundario;
+            border: 3px solid $fuerzaprimario;
+        }
+        &::-webkit-slider-runnable-track{
+            background-color: $fuerzaprimario;
+        }
+        &::-moz-range-track{
+            background-color: $fuerzaprimario;
+        }
+        &::-ms-track{
+            background-color: $fuerzaprimario;
+        }
+    }
+    // EDITANDO DATALIST
+    .lista_defecto {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        text-align: center;
+        .opcion_defecto {
+            cursor: pointer;
+            position: relative;
+            color: $blanco;          
+            &::before {
+                position: absolute;
+                top: -2.1rem;
+                right: 0;
+                left: 0;
+                content: "";
+                margin: 0 auto;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+            }
+        }
+        .opcion_bocanada {
+            &::before {
+                background-color: $bocanadasecundario;
+            }
+        }
+        .opcion_siempre {
+            &::before {
+                background-color: $blanco;
+            }
+        }
+        .opcion_ahi {
+            &::before {
+                background-color: $blanco;
+            }
+        }
+        .opcion_fuerza {
+            &::before {
+                background-color: $fuerzasecundario;
+            }
+        }
+    }
+}
+
+// FLECHA ARRIBA SCROLL
+.contenedor-flecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    .boton_arriba {
+        cursor: pointer;
+        background: none;
+        padding: 0;
+        border: none;
+    }
+}
+
+/*Logo*/
+[alt='www.000webhost.com'] {
+	display: none;
+}
+/*Fin Logo*/
+
+@keyframes rotateback2 {
+    0% {
+        transform: translateY(0.5rem);
+    }
+    50% {
+        transform: translateY(0rem);
+    }
+    100% {
+        transform: translateY(-0.5rem);
+    }
+}
+
+.flecha_arriba {
+    height: 3rem;
+    animation: rotateback2 1s linear infinite;
+    &:hover {
+        animation: none;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    html {
+        font-size: 12pt;
+    }
+    .contenedor-rango {
+        .lista_defecto {
+            .opcion_defecto {         
+                &::before {
+                    top: -2.2rem;
+                }
+            }
+        }
+    }
+} /*fin de media 1100px*/
+
+@media all and (max-width: 924px) {
+    html {
+        font-size: 11pt;
+    }
+    #encabezado {
+        & > *:before {
+            top: calc(-2rem - 1px);
+            height: calc(2rem + 1px);
+        }
+        .contenedor1 {
+            margin-top: 2rem;
+            .contenedor2 {
+                padding: 2.5rem 1rem;
+                h1 {
+                    font-size: 1.65rem;
+                    line-height: 1.4;
+                }
+                p {
+                    line-height: 1.875;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        nav {
+            margin-top: 2rem;
+            ul {
+                li {
+                    a {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+    .contenedor-rango {
+        .lista_defecto {
+            .opcion_defecto {         
+                &::before {
+                    top: -2.3rem;
+                }
+            }
+        }
+    }    
+} /*fin de media 924px*/
+
+@media all and (max-width: 883px) {
+    #encabezado {
+        .logo-cerati {
+            width: 4.75rem;
+        }
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+} /*fin de media 883px*/
+
+@media all and (max-width: 772px) {
+    #encabezado {
+        nav {
+            ul {
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 10rem;
+            max-width: 100%;
+                li {
+                    border-left: 0;
+                }
+            }
+        }
+    }
+    .contenedor-rango {
+        .rango_defecto {
+            width: 95%;
+        }
+    }
+} /*fin de media 772px*/
+
+@media all and (max-width: 592px) {
+    .img-izquierda, .img-derecha {
+        max-width: 317px;
+    }
+    .contenedor-rango {
+        .rango_defecto {
+            width: 93%;
+        }
+    }
+} /*fin de media 592px*/
+
+@media all and (max-width: 468px) {
+    #articulos .articulo_discos {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+    // .contenedor-rango {
+    //     .rango_defecto {
+    //         width: 90%;
+    //     }
+    // }
+} /*fin de media 468px*/
+
+@media all and (max-width: 436px) {
+    #cargando_pagina {
+        #contenedor_precarga {
+            .satelite_cerati {
+                height: 15rem;
+            }
+        }
+    }
+    #articulos .articulo_discos {
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    .img-izquierda, .img-derecha {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        max-width: 100%;
+    }
+    .texto-curiosidad {
+        &.active {
+            img {
+                height: auto;
+            }
+        }
+    }
+    .div-curiosidad {
+        padding: 1rem 0rem;
+        box-sizing: border-box;
+    }
+    .contenedor-rango {
+        .rango_defecto {
+            width: 90%;
+        }
+    }
+} /*fin de media 436px*/
+
+@media all and (max-width: 319px) {
+    #cargando_pagina {
+        #contenedor_precarga {
+            .satelite_cerati {
+                height: 10rem;
+            }
+        }
+    }
+    .contenedor-rango {
+        .rango_defecto {
+            width: 86%;
+        }
+    }
+} /*fin de media 319px*/
+
+
